@@ -1,0 +1,87 @@
+.bodyContainer{
+    min-height: 80vh;
+    background-color: #EFEDE8;
+    padding: 1rem;
+}
+
+.mainBody{
+   height: 100%;
+}
+
+.bodyOne{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.bodyHeading{
+    display: flex;
+    justify-content: center;
+}
+
+.bodyHeading h2{    
+    width: 76%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.bodyOneText{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.bodyOneText p{
+    width: 60%;
+    text-align: center;
+}
+
+@media screen and (max-width:964px) {
+    
+    .bodyHeading h2{
+        width: 80%;
+        font-size: 2.2rem;
+    }
+    .bodyOneText p{
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width:680px) {
+    
+    .bodyHeading h2{
+        width: 80%;
+        font-size: 1.8rem;
+    }
+    .bodyOneText p{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:585px) {
+    
+    .bodyHeading h2{
+        width: 100%;
+        font-size: 1.6rem;
+    }
+    .bodyOneText p{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:436px) {
+    
+    .bodyHeading h2{
+        width: 100;
+        font-size: 1.4rem;
+    }
+    .bodyOneText p{
+        width: 100%;
+    }
+}
+
+.bodyTwo{
+    width: 100%;
+}

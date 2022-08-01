@@ -1,0 +1,259 @@
+@font-face {
+    src: url(../../Fonts/DIN-Bold.ttf);
+    font-family: 'DIN-BOLD' ;
+}
+
+.head{
+    height: 116px;
+    position: relative;
+    z-index: 2;
+}
+
+.header{
+    background-color: #262626;
+    padding: 12px;
+    position: fixed;
+    width: 100%;
+}
+
+.marginutil{
+    margin: 0;
+}
+
+.paddingutil{
+    padding: 0;
+}
+
+.navbar{
+    border: 1px solid #e4d00a;
+    position: relative;
+    height: 92px;
+    display: flex;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navmenu1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35%;
+}
+
+.navmenu2{
+    width: 30%;
+    text-align: center;
+}
+
+.navmenu3{
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navitem{
+    list-style: none;
+    padding: 12px;
+    font-weight: 900;
+}
+
+.navitem::before {
+    content: "\2022"; 
+    color: #e4d00a;; 
+    font-weight: bold;
+    display: inline-block;
+    width: 12px; 
+    margin-left: -12px;
+}
+
+.navmenu2 .navitem::before{
+    display: none;
+}
+
+.navmenu1 li{
+    transition: transform 500ms ease;
+    transition-delay: 100ms;
+}
+
+.navmenu2 li{
+    transition: transform 500ms ease;
+    transition-delay: 200ms;
+}
+
+.navmenu3 li{
+    transition: transform 500ms ease;
+    transition-delay: 300ms;
+}
+
+.navmenu3 .navitem::before{
+    content: ""; 
+    color:transparent; 
+    font-weight: bold;
+    display: none;
+    width: 0px; 
+    margin-left: 0px;
+}
+
+.navmenu3 .navitem{
+    position: relative;
+}
+
+.navmenu3 .navitem span{
+    color: #e4d00a;
+    position: absolute;
+    left: -1.4rem;
+    font-size: 2rem;
+    top: -0.2rem;
+}
+
+.navlink{
+    text-decoration: none;
+    font-family: 'DIN-BOLD';
+    color: #fdfdfdd6;
+    transition: 0.7s ease;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.navlink:hover{
+    color: #e4d00a;
+}
+
+.navlink::after{
+    content: "";
+    position: absolute;
+    background-color: #e4d00a;
+    height: 3px;
+    width: 0%;
+    left: 0%;
+    top: 100%;
+    transition: 0.3s;
+}
+
+.navlink:hover::after{
+   width: 100%;
+}
+
+.navimage{
+    width: 30%;
+    height: 100%;
+}
+
+.hamburger{
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 7%;
+    height: 24%;
+    transform: translateY(-50%)
+}
+
+.bar{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 4px;
+    transition: 0.4s; 
+}
+
+@media screen and (max-width:873px) {
+
+    .hamburger{
+        display: flex;
+        height: 45%;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: rotate(44deg) translateY(8px);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: rotate(-45deg) translate(3px,-12px);
+    }
+
+    .menu{
+        top: 45px;
+        background-color: #262626;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        left: -100%;
+        position: fixed;
+        transition: all 0.3s;
+    }
+    .navbar{
+        border: none;
+        height: 46px;;
+    }
+
+    .menu.active{
+        left: 0%;
+    }
+    
+    .navmenu1{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navmenu2{
+        width: 100%;
+    }
+    .navmenu3{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navmenu1 li{
+        width: 100%;
+    }
+
+    .navmenu1 li:nth-child(odd){
+        transform: translateX(-12%);
+    }
+
+    .navmenu1 li:nth-child(even){
+        transform: translateX(300%);
+    }
+
+    .navmenu1 .navitem.active{
+        transform: translateX(45%);
+    }
+
+    .navmenu2 li:nth-child(1){
+        transform: translateX(-65%);
+    }
+
+    .navmenu2 .navitem.active{
+        transform: translateX(0%);
+    }
+
+    .navmenu3 li:nth-child(odd){
+        transform: translateX(-25%);
+    }
+
+    .navmenu3 li:nth-child(even){
+        transform: translateX(300%);
+    }
+
+    .navmenu3 .navitem.active{
+        transform: translateX(42%);
+    }
+
+    .head{
+        height: 70px;
+    }
+
+}

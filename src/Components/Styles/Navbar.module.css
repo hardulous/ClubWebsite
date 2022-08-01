@@ -54,21 +54,18 @@
     width: 35%;
     display: flex;
     justify-content: space-around;
+    height: 100%;
+    align-items: center;
+}
+
+.navmenu3 .navitem:nth-child(2) .navlink{
+    color: #e4d00a;
 }
 
 .navitem{
     list-style: none;
     padding: 12px;
     font-weight: 900;
-}
-
-.navitem::before {
-    content: "\2022"; 
-    color: #e4d00a;; 
-    font-weight: bold;
-    display: inline-block;
-    width: 12px; 
-    margin-left: -12px;
 }
 
 .navmenu2 .navitem::before{
@@ -254,6 +251,17 @@
 
     .head{
         height: 70px;
+    }
+
+    .navmenu3{
+        display: flex;
+        justify-content: space-around;
+        height: auto;
+        align-items: normal;
+    }
+    
+    .navmenu3 .navitem:nth-child(2) .navlink{
+        color: #e4d00a;
     }
 
 }

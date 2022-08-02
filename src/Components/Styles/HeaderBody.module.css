@@ -6,6 +6,7 @@
     background:linear-gradient(rgba(73, 73, 73, 0.747),rgba(98, 98, 100, 0.692),rgba(83, 85, 83, 0.589)) , url(../../images/club-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     filter: brightness(1) grayscale(46%);
     position: relative;
     display: flex;

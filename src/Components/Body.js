@@ -25,9 +25,15 @@ const Body = () => {
 
       <div className={`${St.bodyTwo}`}>
          <div className={`row`}>
-           <div className={`col-3`}>
-             <Card card={CardData}/>
-           </div>
+          {
+            CardData.map((card,i)=>{
+
+              return  <div className={`col-6 col-md-4 col-lg mb-3`} key={i}>
+              <Card card={card}/>
+            </div>
+
+            })
+          }
          </div>
       </div>
 

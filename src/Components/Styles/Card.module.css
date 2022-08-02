@@ -1,0 +1,92 @@
+@font-face {
+    src: url(../../Fonts/DIN-Bold.ttf);
+    font-family: 'DIN-BOLD' ;
+}
+
+@font-face {
+    src: url(../../Fonts/DIN-Light.ttf);
+    font-family: 'DIN-LIGHT';
+}
+
+@font-face {
+    src: url(../../Fonts/HunterRiver-Regular.otf);
+    font-family:'HunterRiver' 
+}
+
+.card{
+   background-color: #E4DFD8;
+   padding: 1.4rem 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   transition: transform 0.5s ease;
+}
+
+.cardHeading{
+    display: flex;
+    justify-content: center;
+}
+
+.cardHeading h6{
+    font-size: 25px;
+    line-height: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'DIN-BOLD';
+    text-align: center;
+    letter-spacing: 0px;
+    transition: 0.5s ease;
+    background-color: inherit;
+}
+
+.cardHeading h6:hover{
+    background-color: #F1C761;
+}  
+
+.cardBody{
+    margin-top: 1rem;
+}
+
+.cardDesc{
+    display: flex;
+    justify-content: center;
+}
+
+.cardDesc p{
+    text-align: center;
+    width: 80%;
+    font-family: 'DIN-LIGHT';
+    color: #746969;
+    font-weight: bolder;
+    font-size: 1rem;;
+}
+
+.card > a{
+  margin-top: 2rem;
+  text-decoration: none;
+  position: relative;
+  font-size: 4rem;
+}
+
+.card > a > i{    /* pasted from font awesome */ 
+    font-weight: 900; 
+    color:  black;
+    position: relative;
+    z-index: 1000;
+}
+
+.card:hover{
+    transform: translateY(-15px);
+}
+
+.iconText{
+    color: #F1C761;
+    position: absolute;
+    top: 13%;
+    font-weight: bolder;
+    left: -27%;
+    font-size: 4.6rem;
+    transform: skewX(-12deg) skewY(-7deg);
+    font-family: 'HunterRiver';
+}

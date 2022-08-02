@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import S from "./Styles/Navbar.module.css";
 import logotwo from "../images/club-logo2.png";
 import {IoBeerOutline} from 'react-icons/io5'
 import {VscFeedback} from 'react-icons/vsc' 
+import {AiOutlineArrowUp} from 'react-icons/ai'
 
 const Navbar = () => {
   // state variable to hide and show ham menu
@@ -11,6 +12,40 @@ const Navbar = () => {
   const toggleHam = () => {
     setshowHam(!showHam);
   };
+
+  useEffect(() => {
+    
+    const scrollElement = document.querySelector(`.${S.scrollTop}`);
+
+    const topElement = document.querySelector(`.${S.head}`)
+
+    const scrollTop = (e)=>{
+       console.log("TOP")
+       topElement.scrollIntoView({
+        behavior: "smooth"
+       })
+
+    }
+
+    document.addEventListener('scroll',()=>{
+      
+      if(window.scrollY > 170){
+
+        scrollElement.classList.add(`${S.active}`)
+        scrollElement.addEventListener("click",scrollTop);
+
+      }
+
+      else{
+
+        scrollElement.classList.remove(`${S.active}`)
+        scrollElement.removeEventListener("click",scrollTop);
+
+      }
+
+    })
+  }, [])
+  
 
   return (
     <div className={`${S.head}`}>
@@ -71,6 +106,12 @@ const Navbar = () => {
             <span className={`${S.bar}`}></span>
             <span className={`${S.bar}`}></span>
           </div>
+          
+          {/* Scroll to top */}
+          <div className={`${S.scrollTop}`}>
+            <AiOutlineArrowUp/>
+          </div>
+
         </nav>
       </header>
     </div>

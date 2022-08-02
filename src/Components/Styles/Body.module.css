@@ -1,3 +1,8 @@
+@font-face {
+    src: url(../../Fonts/DIN-Bold.ttf);
+    font-family:'DIN-BOLD';
+}
+
 .bodyContainer{
     min-height: 80vh;
     background-color: #EFEDE8;
@@ -22,6 +27,8 @@
     width: 76%;
     text-align: center;
     font-size: 2.5rem;
+    font-family: 'DIN-Bold';
+    color: #1E1E1E;
 }
 
 .bodyOneText{
@@ -33,6 +40,8 @@
 .bodyOneText p{
     width: 60%;
     text-align: center;
+    color: #746969;
+    font-family: 'DIN-BOLD';
 }
 
 @media screen and (max-width:964px) {

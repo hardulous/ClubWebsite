@@ -13,7 +13,7 @@ const HeaderBody = () => {
 
       setTimeout(() => {
 
-        document.getElementsByClassName(`${S.beer}`)[0].classList.add(`${S.active}`);
+        document.querySelector(`.${S.beer}`).classList.add(`${S.active}`);
 
         setTimeout(() => {
 

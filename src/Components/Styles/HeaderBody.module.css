@@ -1,3 +1,8 @@
+@font-face {
+    src: url(../../Fonts/HunterRiver-Regular.otf);
+    font-family:'HunterRiver' 
+}
+
 .container{
     margin: 0;
     padding: 0;
@@ -17,21 +22,21 @@
 .beerImg{
     height: 85%;
     animation: beer 6s ease 1;
-    animation-delay: 3s;
     animation-fill-mode: forwards;
+    animation-delay: 1.5s;
     opacity: 0;
-    z-index: 1000;
+    z-index: 3;
     transition: opacity 200ms;
     position: relative;
     filter: opacity(0.9);
 }
 
 .beerText{
-    display: inline-block;
     font-size: 14rem;
     position: absolute;
     top: 0%;
-    color: white
+    color: white;
+    z-index: 2;
 }
 
 .beerText:nth-of-type(1){
@@ -48,6 +53,63 @@
 
 .beerText:nth-of-type(4){
     left: 158px;
+}
+
+.hunterText{
+    position: absolute;
+    display: inline-block;
+    font-size: 8rem;
+    top: 38%;
+    color: white;
+    font-family: 'HunterRiver';
+    left: -162%;
+    color: #F1C761;
+    opacity: 0;
+    animation: hunterText 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes hunterText {
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.beerText{
+    animation-name: beerText;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+@keyframes beerText {
+    
+    0%{
+        opacity: 0.5;
+        transform: translateY(50%);
+    }
+    45%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    65%{
+        opacity: 1;
+        transform: translateX(10%);
+    }
+    80%{
+        opacity: 1;
+        transform: translateX(-10%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .beer{
@@ -169,3 +231,48 @@
     }
 }
 
+@media screen and (max-width:740px) {
+    
+    .beerText{
+        font-size: 12rem;
+        top: 8%;
+    }
+    .hunterText{
+        font-size: 6rem;
+        top: 45%;
+        left: -104%;
+    }
+
+}
+
+@media screen and (max-width:580px) {
+    
+    .hunterText{
+        font-size: 5rem;
+        top: 51%;
+        left: -77%;
+    }
+}
+
+@media screen and (max-width:392px) {
+    .hunterText{
+        font-size: 4rem;
+        top: 50%;
+        left: -53%;
+    }
+    .beerText{
+        font-size: 8rem;
+        top: 22%;
+    }
+    .beerText:nth-of-type(1){
+        left: -65px;
+    }
+    
+    .beerText:nth-of-type(2){
+        left: 9px;
+    }
+    
+    .beerText:nth-of-type(3){
+        left: 64px;
+    }
+}

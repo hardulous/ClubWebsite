@@ -1,0 +1,95 @@
+@font-face {
+    src: url(../../Fonts/DIN-Light.ttf);
+    font-family: "DIN-LIGHT";
+}
+@font-face {
+    src: url(../../Fonts/DIN-Bold.ttf);
+    font-family: "DIN-BOLD";
+}
+
+
+.bodyTwoContainer{
+    min-height: 80vh;
+    background-color: #1e1e1e;
+    padding: 3rem 1rem 1rem 2rem;
+    overflow: hidden;
+}
+
+.bodyTwoMain{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.imgContainer{
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.imgContainer img{
+    object-fit: contain;
+}
+
+.textContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 2rem 0px 4rem;
+    width: 50%;
+}
+
+.imgContainer img{
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+}
+
+.upperText h1{
+  font-size:2.2rem;
+  font-weight: bolder;
+  color:white;
+  font-family: 'DIN-BOLD';
+}
+
+.upperText p{
+    color: #828282;
+    font-family: 'DIN-LIGHT';
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.lowerText ul{
+    color :#828282;
+    list-style: none;
+    font-family: 'DIN-LIGHT';
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.lowerText ul li::before{
+    content: "\2022";  
+    color: #F1C761; 
+    font-weight: bold; 
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em; 
+}
+
+@media screen and (max-width:800px) {
+    
+    .bodyTwoMain{
+        flex-direction: column;
+    }
+    .imgContainer{
+        max-width: 100%;
+        width: 93%;
+    }
+    .textContainer{
+        width: 100%;
+        margin-top: 3rem;
+        padding: 0px;
+    }
+
+}

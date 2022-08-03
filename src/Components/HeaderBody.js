@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import S from "./Styles/HeaderBody.module.css";
 import St from "./Styles/Body.module.css"
+import Ss from "./Styles/BodyTwo.module.css"
 import beer from "../images/beer.png";
 import Body from "./Body";
+import BodyTwo from "./BodyTwo";
 
 const HeaderBody = () => {
   const [showBeer, setshowBeer] = useState(true);
@@ -11,17 +13,17 @@ const HeaderBody = () => {
 
     if (showBeer) {
 
-      setTimeout(() => {
+      // setTimeout(() => {
 
-        document.querySelector(`.${S.beer}`).classList.add(`${S.active}`);
+      //   document.querySelector(`.${S.beer}`).classList.add(`${S.active}`);
 
-        setTimeout(() => {
+      //   setTimeout(() => {
 
-          setshowBeer(!showBeer);
+      //     setshowBeer(!showBeer);
 
-        }, 2000);
+      //   }, 2000);
 
-      }, 10000);
+      // }, 10000);
 
     } 
     else {
@@ -85,31 +87,42 @@ const HeaderBody = () => {
       {showBeer ? (
         <div className={`${S.beer}`}>
           <img src={beer} alt="Beer.png" className={`${S.beerImg}`} />
+          <span className={`${S.beerText}`}>K</span>
+          <span className={`${S.beerText}`}>I</span>
+          <span className={`${S.beerText}`}>N</span>
+          <span className={`${S.beerText}`}>G</span>
         </div>
-      ) : (
-        <div className={`${S.textContainer}`}>
-          <section className={`${S.home}`}>
-            <div className={`${S.containerSmall}`}>
-              <div>
-                <div className={`${S.homeText}`}>
-                  <h1>King's Restaurant and bar</h1>
-                  <p className="animateText">
-                    <span>Welcome</span>
-                    <span>Best club in gurugram</span>
-                    <span>Great environment</span>
-                    <span>Offordable price</span>
-                    <span>Book your table now!</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      )}
+      ) : 
+      
+      // (
+      //   <div className={`${S.textContainer}`}>
+      //     <section className={`${S.home}`}>
+      //       <div className={`${S.containerSmall}`}>
+      //         <div>
+      //           <div className={`${S.homeText}`}>
+      //             <h1>King's Restaurant and bar</h1>
+      //             <p className="animateText">
+      //               <span>Welcome</span>
+      //               <span>Best club in gurugram</span>
+      //               <span>Great environment</span>
+      //               <span>Offordable price</span>
+      //               <span>Book your table now!</span>
+      //             </p>
+      //           </div>
+      //         </div>
+      //       </div>
+      //     </section>
+      //   </div>
+      // )
+      "" }
     </div>
 
     <div className={`${St.bodyContainer}`}>
         <Body/>
+    </div>
+
+    <div className={`${Ss.bodyTwoContainer}`}>
+      <BodyTwo/>
     </div>
 
     </>

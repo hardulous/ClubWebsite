@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "DIN-BOLD";
+    src: url(../../Fonts/DIN-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'DIN-LIGHT' ;
+    src: url(../../Fonts/DIN-Light.ttf);
+}
+
+.ReservationContainer{
+    min-height: 120vh;
+    background-color: #EFEDE8;
+    padding: 3rem 1rem 1rem 1rem;
+}
+
+.resMain{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.resUpper{
+
+}
+
+.upperHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.upperHeader p{
+    width: 70%;
+    font-family: 'DIN-LIGHT';
+    color: #746969;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 1.5rem;
+}
+
+.upperHeader h1{
+    font-family: 'DIN-BOLD';
+    color: #1E1E1E;
+    font-size: 4rem;
+    font-weight: bold;
+    word-spacing: 0px;
+    letter-spacing: -3px;
+}
+
+.upperForm{
+    display: flex;
+    justify-content: center;
+}
+
+.upperForm form{
+    display: flex;
+    justify-content: space-evenly;
+    width: 67%;
+}
+
+.input{
+
+}
+
+.resLower{
+    margin-top: 4rem;
+}
+

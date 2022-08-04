@@ -2,9 +2,12 @@ import React, { useEffect, useState } from "react";
 import S from "./Styles/HeaderBody.module.css";
 import St from "./Styles/Body.module.css"
 import Ss from "./Styles/BodyTwo.module.css"
-import beer from "../images/beer.png";
+import Sst from "./Styles/Reservation.module.css"
+// import beer from "../images/beer.png";
+import beer from '../images/wine.png'
 import Body from "./Body";
 import BodyTwo from "./BodyTwo";
+import Reservation from "./Reservation";
 
 const HeaderBody = () => {
   const [showBeer, setshowBeer] = useState(true);
@@ -91,7 +94,10 @@ const HeaderBody = () => {
           <span className={`${S.beerText}`}>I</span>
           <span className={`${S.beerText}`}>N</span>
           <span className={`${S.beerText}`}>G</span>
-          <span className={`${S.hunterText}`}>RESTAURANT</span>
+          <span className={`${S.beerText}`}>B</span>
+          <span className={`${S.beerText}`}>A</span>
+          <span className={`${S.beerText}`}>R</span>
+          <span className={`${S.hunterText}`}>Restaurant</span>
         </div>
       ) : 
       
@@ -124,6 +130,10 @@ const HeaderBody = () => {
 
     <div className={`${Ss.bodyTwoContainer}`}>
       <BodyTwo/>
+    </div>
+
+    <div className={`${Sst.ReservationContainer}`}>
+       <Reservation/>
     </div>
 
     </>

@@ -2,6 +2,10 @@
     src: url(../../Fonts/DIN-Bold.ttf);
     font-family:'DIN-BOLD';
 }
+@font-face {
+    src: url(../../Fonts/DIN-Light.ttf);
+    font-family:'DIN-LIGHT';
+}
 
 .bodyContainer{
     min-height: 80vh;
@@ -42,7 +46,8 @@
     width: 60%;
     text-align: center;
     color: #746969;
-    font-family: 'DIN-BOLD';
+    font-family: 'DIN-LIGHT';
+    font-weight: bolder;
 }
 
 @media screen and (max-width:964px) {

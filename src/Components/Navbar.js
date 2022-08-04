@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import S from "./Styles/Navbar.module.css";
-import logotwo from "../images/club-logo2.png";
+// import logotwo from "../images/club-logo2.png";
+import logoTwo from '../images/club-logo-fin.png'
 import {IoBeerOutline} from 'react-icons/io5'
 import {VscFeedback} from 'react-icons/vsc' 
 import {AiOutlineArrowUp} from 'react-icons/ai'
@@ -77,7 +78,7 @@ const Navbar = () => {
 
             <ul className={`${S.navmenu2} ${S.marginutil} ${S.paddingutil}`}>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
-                <img src={logotwo} alt="club-logo" className={`${S.navimage}`} />
+                <img src={logoTwo} alt="club-logo" className={`${S.navimage}`} />
               </li>
             </ul>
 

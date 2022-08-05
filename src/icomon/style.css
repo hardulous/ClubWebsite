@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../icomon/fonts/icomoon.eot?k8aori');
+  src:  url('../icomon/fonts/icomoon.eot?k8aori#iefix') format('embedded-opentype'),
+    url('../icomon/fonts/icomoon.ttf?k8aori') format('truetype'),
+    url('../icomon/fonts/icomoon.woff?k8aori') format('woff'),
+    url('../icomon/fonts/icomoon.svg?k8aori#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color:#746969;
+  text-transform: none;
+}
+
+.icon-alarm:before {
+  content: "\e950";
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+}
+.icon-calendar:before {
+  content: "\e953";
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+}
+.icon-user-plus:before {
+  content: "\e973";
+  position: absolute;
+  top: 50%;
+  left: 19px;
+  transform: translateY(-50%);
+}

@@ -62,7 +62,40 @@
 }
 
 .input{
+    position: relative;
+    width: 20.2%;
+}
 
+.input a{
+  width: 100%;
+  height: 100%;
+}
+
+.input input,select,button{
+    padding: 0.6rem 0.2rem;
+    width: 100%;
+    height: 92%;
+    text-align: center;
+    color: #746969;
+    font-family: 'DIN-LIGHT';
+    font-weight: bolder;
+    border-width: medium;
+    border-color: #746969;
+    border-style: solid;
+    background-color: transparent;
+}
+
+.input button{
+    background-color: #1E1E1E;
+    color: #ffffff;
+}
+
+.input select option{
+    font-size: 1.2rem;
+    color: #746969;
+    font-family: 'DIN-LIGHT';
+    font-weight: bolder;
+    background-color: #1E1E1E;
 }
 
 .resLower{

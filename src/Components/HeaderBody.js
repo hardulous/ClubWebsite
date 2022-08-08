@@ -5,7 +5,7 @@ import Ss from "./Styles/BodyTwo.module.css"
 import Sst from "./Styles/Reservation.module.css"
 import S2 from "./Styles/Footer.module.css"
 // import beer from "../images/beer.png";
-import beer from '../images/wine.png'
+import beer from '../images/Wine-final.png';
 import Body from "./Body";
 import BodyTwo from "./BodyTwo";
 import Reservation from "./Reservation";
@@ -139,6 +139,7 @@ const HeaderBody = () => {
     </div>
 
     <div className={`${S2.FooterContainer}`}>
+       <div className={`${S2.footerBanner}`}></div>
        <Footer/>
     </div>
 

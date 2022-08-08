@@ -35,7 +35,7 @@ const Reservation = () => {
         <div className={`${S.upperForm}`}>
           <form>
             <div className={`${S.input}`}>
-              <a className="icon-user-plus"></a>
+              <a href="#" className="icon-user-plus"></a>
               <select>
                 <option value="">No of Person</option>
                 <option value="">1 Person</option>

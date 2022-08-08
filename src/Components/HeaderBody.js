@@ -3,11 +3,13 @@ import S from "./Styles/HeaderBody.module.css";
 import St from "./Styles/Body.module.css"
 import Ss from "./Styles/BodyTwo.module.css"
 import Sst from "./Styles/Reservation.module.css"
+import S2 from "./Styles/Footer.module.css"
 // import beer from "../images/beer.png";
 import beer from '../images/wine.png'
 import Body from "./Body";
 import BodyTwo from "./BodyTwo";
 import Reservation from "./Reservation";
+import Footer from "./Footer";
 
 const HeaderBody = () => {
   const [showBeer, setshowBeer] = useState(true);
@@ -136,10 +138,13 @@ const HeaderBody = () => {
        <Reservation/>
     </div>
 
+    <div className={`${S2.FooterContainer}`}>
+       <Footer/>
+    </div>
+
     </>
 
   );
 };
 
 export default HeaderBody;
-

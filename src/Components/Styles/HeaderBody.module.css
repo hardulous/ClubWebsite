@@ -45,44 +45,45 @@
 }
 
 .beerText:nth-of-type(1){
-    left: -166%;
+    left: -187%;
 }
 
 .beerText:nth-of-type(2){
-    left: -107%;
+    left: -121%;
 }
 
 .beerText:nth-of-type(3){
-    left: -87%;
+    left: -99%;
 }
 
 .beerText:nth-of-type(4){
     left: -32%;
+    z-index: 0;
 }
 
 .beerText:nth-of-type(5){
-    left: 70%;
+    left: 75%;
 }
 
 .beerText:nth-of-type(6){
-    left: 122%;
+    left: 137%;
 }
 
 .beerText:nth-of-type(7){
-    left: 175%;
+    left: 202%;
 }
 
 .hunterText{
     position: absolute;
     display: inline-block;
     font-size: 7rem;
-    top: 43%;
+    top: 50%;
     color: white;
     font-family: 'Amithen';
     left: 91%;
     color: rgb(241, 199, 97);
     opacity: 0;
-    animation: HeaderBody_hunterText__\+CGYl 3s;
+    animation: hunterText 3s;
     animation-fill-mode: forwards;
     animation-delay: 2s;
     z-index:1
@@ -261,20 +262,20 @@
     }
     .hunterText{
         font-size: 6rem;
-        top: 45%;
+        top: 52%;
         left: 90%;
     }
     
 .beerText:nth-of-type(1){
-    left: -135%;
+    left: -158%;
 }
 
 .beerText:nth-of-type(2){
-    left: -88%;
+    left: -98%;
 }
 
 .beerText:nth-of-type(3){
-    left: -70%;
+    left: -79%;
 }
 
 .beerText:nth-of-type(4){
@@ -286,11 +287,11 @@
 }
 
 .beerText:nth-of-type(6){
-    left: 126%;
+    left: 133%;
 }
 
 .beerText:nth-of-type(7){
-    left: 172%;
+    left: 187%;
 }
 
 }
@@ -309,23 +310,23 @@
         top: 15%;
     }
     .beerText:nth-of-type(1){
-        left: -100%;
+        left: -113%;
     }
     
     .beerText:nth-of-type(2){
-        left: -62%;
+        left: -70%;
     }
     
     .beerText:nth-of-type(3){
-        left: -49%;
+        left: -56%;
     }
     
     .beerText:nth-of-type(4){
-        left: -12%;
+        left: -11%;
     }
     
     .beerText:nth-of-type(5){
-        left: 85%;
+        left: 79%;
     }
     
     .beerText:nth-of-type(6){
@@ -333,7 +334,7 @@
     }
     
     .beerText:nth-of-type(7){
-        left: 155%;
+        left: 161%;
     }
 
     .homeText h1{
@@ -360,7 +361,7 @@
     }
     .hunterText{
         font-size: 2.7rem;
-        top: 45%;
+        top: 41%;
         left: 90%;
     }
     .beerText{
@@ -409,7 +410,7 @@
     }
     .hunterText{
         font-size: 2rem;
-        top: 35%;
+        top: 32%;
         left: 90%;
     }
     .beerText{

@@ -21,10 +21,6 @@
     flex-direction: column;
 }
 
-.resUpper{
-
-}
-
 .upperHeader{
     display: flex;
     flex-direction: column;
@@ -48,6 +44,7 @@
     font-weight: bold;
     word-spacing: 0px;
     letter-spacing: -3px;
+    text-align: center;
 }
 
 .upperForm{
@@ -58,7 +55,7 @@
 .upperForm form{
     display: flex;
     justify-content: space-evenly;
-    width: 67%;
+    width: 85%;
 }
 
 .input{
@@ -72,9 +69,9 @@
 }
 
 .input input,select,button{
-    padding: 0.6rem 0.2rem;
+    padding: 1.4rem 0.8rem;
     width: 100%;
-    height: 92%;
+    height: 99%;
     text-align: center;
     color: #746969;
     font-family: 'DIN-LIGHT';
@@ -86,7 +83,30 @@
 }
 
 .input button{
+    background-color: #F1C761;
+    color: #1E1E1E;
+    border: none;
+    position: relative;
+    z-index: 1;
+}
+
+.input button::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
     background-color: #1E1E1E;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.input button:hover::before{
+    width: 100%;
+}
+
+.input button:hover{
     color: #ffffff;
 }
 
@@ -102,3 +122,63 @@
     margin-top: 4rem;
 }
 
+.calClass{
+    font-family: 'DIN-LIGHT';
+    background-color: #EFEDE8;
+}
+
+@media screen and (max-width:1128px) {
+    
+    .upperForm form{
+        width: 86%;
+        flex-wrap: wrap;
+    }
+
+    .input{
+        width: 42%;
+        margin: 0.4rem;
+    }
+}
+
+@media screen and (max-width:724px) {
+    
+    .upperForm form{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input{
+        width: 90%;
+        margin: 0.2rem;
+    }
+
+}
+
+.colCard{
+    padding: 3rem 1rem 3rem 1rem;
+    background-color: #E4DFD9;
+    width: 45%;
+}
+
+@media screen and (max-width:1111px) {
+    
+    .colCard:nth-of-type(1){
+         width: 36%;
+    }
+    .colCard:nth-of-type(2){
+        width: 58%;
+    }
+}
+
+@media screen and (max-width:791px) {
+    
+   .colCard:nth-of-type(1){
+        width: 100%;
+   }
+   .colCard:nth-of-type(2){
+       width: 100%;
+       margin-top: 1rem;
+   }
+}

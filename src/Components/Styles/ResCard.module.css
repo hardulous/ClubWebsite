@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'DIN-BOLD';
+    src: url(../../Fonts/DIN-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'DIN-LIGHT';
+    src: url(../../Fonts/DIN-Light.ttf);
+}
+
+
+.cardHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem 1.4rem 2rem;
+}
+
+.cardHeader h1{
+    text-align: center;
+    margin-bottom: 1.7rem;
+    font-size: 3rem;
+    font-family: 'DIN-BOLD';
+    color: #1E1E1E;
+    letter-spacing: -4px;
+    word-spacing: 7px;
+}
+
+.cardHeader p{
+    text-align: justify;
+    font-size: 1.2rem;
+    color: #746969;
+    font-family: 'DIN-LIGHT';
+    font-weight: bolder;
+    line-height: 30px;
+    width: 85%;
+}
+
+.button{
+    text-align: center;
+}
+
+.imgdesc button,.button button{
+    background-color: #F1C761;
+    color: #1E1E1E;
+    width: 35%;
+    font-family: 'DIN-LIGHT';
+    letter-spacing: -1px;
+    font-size: 1.1rem;
+    word-spacing: 4px;
+    border: none;
+    position: relative;
+    z-index: 1;
+}
+
+.imgdesc button::before,.button button::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: #1E1E1E;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.imgdesc button:hover::before,.button button:hover::before{
+    width: 100%;
+}
+.imgdesc button:hover,.button button:hover{
+    color: #ffffff;
+}
+
+.cardImgBody{
+    width: 100%;
+    height: 100%;
+}
+
+.cardImage{
+    width: 100%;
+    height: 77%;
+}
+
+.cardImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardImg{
+    padding: 0.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.imgdesc{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width:1111px){
+
+    .cardHeader h1{
+       font-size: 2rem;
+       width: 101%;
+    }
+
+    .cardHeader p{
+        font-size: 1.1rem;
+        width: 98%;
+    }
+
+    .imgdesc button,.button button{
+        width: 54%;
+    }
+
+}
+
+@media screen and (max-width:963px) {
+    
+    .cardHeader h1{
+        font-size: 1.2rem;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+    .cardHeader p{
+        font-size: 0.9rem;
+        line-height: 27px;
+        width: 114%;
+    }
+}
+
+@media screen and (max-width:791px) {
+
+    .cardHeader h1{
+        font-size: 3rem;
+        letter-spacing: -4px;
+        word-spacing: 7px;
+    }
+    .cardHeader p{
+        font-size: 1.2rem;
+        line-height: 30px;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:519px) {
+    
+    .cardHeader h1{
+        font-size: 2.4rem;
+    }
+    .cardHeader p{
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width:519px) {
+    
+    .cardHeader h1{
+        font-size: 2rem;
+    }
+    .cardHeader p{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width:368px) {
+    
+    .cardHeader h1{
+        font-size: 1.7rem;
+    }
+    .cardHeader p{
+        font-size: 0.7rem;
+    }
+
+}

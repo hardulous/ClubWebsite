@@ -139,7 +139,10 @@ const HeaderBody = () => {
     </div>
 
     <div className={`${S2.FooterContainer}`}>
-       <div className={`${S2.footerBanner}`}></div>
+       <div className={`${S2.footerBanner}`}>
+         <h4>  YOU LIVE ONCE <br />
+         LIVE IT LIKE A KING</h4>
+       </div>
        <Footer/>
     </div>
 

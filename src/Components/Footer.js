@@ -5,10 +5,11 @@ import "../icomon/style.css"
 
 
 const Footer = () => {
-
+  
+  // opening of new url in new tab
   const handleMedia = (e)=>{
      
-    console.log(e.target.id);
+    window.open(e.target.id, '_blank');
 
   }
 
@@ -28,9 +29,9 @@ const Footer = () => {
         </div>
         <div className={`${S.MediaContainer}`}>
           <ul>
-            <li id="facebook" onClick={handleMedia}></li>
-            <li id="twitter" onClick={handleMedia}></li>
-            <li id="insta" onClick={handleMedia}></li>
+            <li id="https://www.facebook.com/King-Restaurant-Bar-109253075212893" onClick={handleMedia}></li>
+            <li id="https://twitter.com/KingRestaurant3" onClick={handleMedia}></li>
+            <li id="https://www.instagram.com/accounts/login/?next=/kingrestaurantbar/" onClick={handleMedia}></li>
           </ul>
         </div>
     </div>

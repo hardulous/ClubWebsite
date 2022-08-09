@@ -1,5 +1,6 @@
 import React from 'react'
 import S from './Styles/BodyTwo.module.css'
+import logo from "../images/food-banner.png"
 
 const BodyTwo = () => {
 
@@ -9,7 +10,7 @@ const BodyTwo = () => {
 
        <div className={`${S.imgContainer}`}>
   
-          <img src="https://pubzinne.axiomthemes.com/wp-content/uploads/2020/03/img-new-2-copyright.png" alt="Club.png" />         
+          <img src={logo} alt="Club.png" />         
 
        </div>
 

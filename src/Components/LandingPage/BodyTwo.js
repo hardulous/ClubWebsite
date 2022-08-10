@@ -1,6 +1,6 @@
 import React from 'react'
 import S from './Styles/BodyTwo.module.css'
-import logo from "../images/food-banner.png"
+import logo from "../../images/food-banner.png"
 
 const BodyTwo = () => {
 
@@ -20,14 +20,14 @@ const BodyTwo = () => {
 
             <div className={`${S.upperText}`}>
                 <h1>FOOD, DRINKS & THE BEST ATMOSPHERE IN TOWN</h1>
-                <p>Good beer brings people together. That’s why every one of our beers is crafted with the simple purpose of helping people spend meaningful time with each other.</p>
+                <p>We are dedicated to providing world-class facilities. At king's bar and resturant you can have a meaningful experience with your friends and family while also enjoying food and belly-warming drinks.</p>
             </div>
 
             <div className={`${S.lowerText}`}>
                 <ul>
-                    <li>original drinks</li>
-                    <li>delicious food</li>
-                    <li>great Atmosphere</li>
+                    <li>Original Drinks</li>
+                    <li>Delicious Food</li>
+                    <li>Great Atmosphere</li>
                 </ul>
             </div>
 

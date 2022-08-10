@@ -1,15 +1,14 @@
 @font-face {
-    src: url(../../Fonts/DIN-Bold.ttf);
-    font-family: 'DIN-BOLD' ;
+    src: url(../../../Fonts/DIN-Bold.ttf);
+    font-family:'DIN-BOLD';
+}
+@font-face {
+    src: url(../../../Fonts/DIN-Light.ttf);
+    font-family:'DIN-LIGHT';
 }
 
 @font-face {
-    src: url(../../Fonts/DIN-Light.ttf);
-    font-family: 'DIN-LIGHT';
-}
-
-@font-face {
-    src: url(../../Fonts/HunterRiver-Regular.otf);
+    src: url(../../../Fonts/HunterRiver-Regular.otf);
     font-family:'HunterRiver' 
 }
 
@@ -69,11 +68,9 @@
   font-size: 4rem;
 }
 
-.card > a > i{    /* pasted from font awesome */ 
-    font-weight: 900; 
-    color:  black;
+.card > a > img{    /* pasted from font awesome */ 
     position: relative;
-    z-index: 1000;
+    z-index: 2;
 }
 
 .card:hover{

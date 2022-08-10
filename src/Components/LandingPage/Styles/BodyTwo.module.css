@@ -1,10 +1,10 @@
 @font-face {
-    src: url(../../Fonts/DIN-Light.ttf);
-    font-family: "DIN-LIGHT";
+    src: url(../../../Fonts/DIN-Bold.ttf);
+    font-family:'DIN-BOLD';
 }
 @font-face {
-    src: url(../../Fonts/DIN-Bold.ttf);
-    font-family: "DIN-BOLD";
+    src: url(../../../Fonts/DIN-Light.ttf);
+    font-family:'DIN-LIGHT';
 }
 
 
@@ -90,6 +90,9 @@
         width: 100%;
         margin-top: 3rem;
         padding: 0px;
+    }
+    .upperText h1{
+        text-align: center;
     }
 
 }

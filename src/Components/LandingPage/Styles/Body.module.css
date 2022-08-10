@@ -1,9 +1,9 @@
 @font-face {
-    src: url(../../Fonts/DIN-Bold.ttf);
+    src: url(../../../Fonts/DIN-Bold.ttf);
     font-family:'DIN-BOLD';
 }
 @font-face {
-    src: url(../../Fonts/DIN-Light.ttf);
+    src: url(../../../Fonts/DIN-Light.ttf);
     font-family:'DIN-LIGHT';
 }
 

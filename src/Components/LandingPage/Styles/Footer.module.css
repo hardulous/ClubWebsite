@@ -1,11 +1,15 @@
 @font-face {
-    font-family: 'DIN-Light' ;
-    src: url(../../Fonts/DIN-Light.ttf);
+    src: url(../../../Fonts/DIN-Bold.ttf);
+    font-family:'DIN-BOLD';
+}
+@font-face {
+    src: url(../../../Fonts/DIN-Light.ttf);
+    font-family:'DIN-LIGHT';
 }
 
 @font-face {
-    font-family: 'DIN-BOLD';
-    src: url(../../Fonts/DIN-Bold.ttf);
+    font-family: "Amithen";
+    src: url(../../../Fonts/Amithen.otf);
 }
 
 .FooterContainer{
@@ -16,7 +20,7 @@
 .footerBanner{
   width: 100%;
   height: 45.5%;
-  background-image: url(../../images/Footer\ banner.jpg);
+  background-image: url(../../../images/Footer\ banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display:flex;
@@ -26,10 +30,11 @@
 
 .footerBanner h4{
     font-size: 5rem;
-    font-family: 'DIN-BOLD';
+    font-family: 'Amithen';
     color: #ffffff;
     text-align: center;
-    font-weight: bolder;
+    font-weight: 500;
+    word-spacing: 10px;
 }
 
 .footerMain{
@@ -121,7 +126,7 @@
 .MediaContainer ul li{
     width: 68px;
     height: 67px;
-    background: url(../../images/media-icon.png);
+    background: url(../../../images/media-icon.png);
     display: inline-block;
     border-radius: 50%;
     cursor: pointer;

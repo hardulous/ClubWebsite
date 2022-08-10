@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import S from "./Styles/HeaderBody.module.css";
-import St from "./Styles/Body.module.css"
-import Ss from "./Styles/BodyTwo.module.css"
-import Sst from "./Styles/Reservation.module.css"
-import S2 from "./Styles/Footer.module.css"
-// import beer from "../images/beer.png";
-import beer from '../images/Wine-final.png';
+import St from "./Styles/Body.module.css";
+import Ss from "./Styles/BodyTwo.module.css";
+import Sst from "./Styles/Reservation.module.css";
+import S2 from "./Styles/Footer.module.css";
+import S1 from "./Styles/Testimonial.module.css";
+import beer from '../../images/Wine-final.png';
 import Body from "./Body";
 import BodyTwo from "./BodyTwo";
 import Reservation from "./Reservation";
 import Footer from "./Footer";
+import Testimonial from "./Testimonial";
 
 const HeaderBody = () => {
   const [showBeer, setshowBeer] = useState(true);
@@ -134,14 +135,18 @@ const HeaderBody = () => {
       <BodyTwo/>
     </div>
 
-    <div className={`${Sst.ReservationContainer}`}>
+    <div className={`${Sst.ReservationContainer}`} id="Reservation">
        <Reservation/>
+    </div>
+
+    <div className={`${S1.TestimonialContainer}`} id="Testimonial">
+    <h1>TESTIMONIALS</h1>
+       <Testimonial/>
     </div>
 
     <div className={`${S2.FooterContainer}`}>
        <div className={`${S2.footerBanner}`}>
-         <h4>  YOU LIVE ONCE <br />
-         LIVE IT LIKE A KING</h4>
+         <h4>Give your tastebuds a<br />taste of ultimate authority</h4>
        </div>
        <Footer/>
     </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { Link , useLocation } from "react-router-dom";
 import S from "./Styles/Navbar.module.css";
-// import logotwo from "../images/club-logo2.png";
-import logoTwo from '../images/club-logo-fin.png'
+import logoTwo from '../../images/club-logo-fin.png'
 import {IoBeerOutline} from 'react-icons/io5'
 import {VscFeedback} from 'react-icons/vsc' 
 import {AiOutlineArrowUp} from 'react-icons/ai'
@@ -55,24 +55,24 @@ const Navbar = () => {
           <div className={`${S.menu} ${showHam ? S.active : ""}`}>
             <ul className={`${S.navmenu1} ${S.marginutil} ${S.paddingutil}`}>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
-                <a href="#" className={`${S.navlink}`}>
+                <Link to="/" className={`${S.navlink}`}>
                   HOME
-                </a>
+                </Link>
               </li>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
-                <a href="#" className={`${S.navlink}`}>
-                  ABOUT
-                </a>
+                <Link to="/about" className={`${S.navlink}`}>
+                  ABOUT US
+                </Link>
               </li>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
-                <a href="#" className={`${S.navlink}`}>
-                  BLOG
-                </a>
+                <Link to="/gallery" className={`${S.navlink}`}>
+                  GALLERY
+                </Link>
               </li>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
-                <a href="#" className={`${S.navlink}`}>
-                  SHOP
-                </a>
+                <Link to="/menu" className={`${S.navlink}`}>
+                  MENU
+                </Link>
               </li>
             </ul>
 
@@ -85,13 +85,13 @@ const Navbar = () => {
             <ul className={`${S.navmenu3} ${S.marginutil} ${S.paddingutil}`}>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}> 
                 <span><VscFeedback/></span>
-                <a href="#" className={`${S.navlink}`}>
+                <a href="/#Testimonial" className={`${S.navlink}`}>
                   TESTIMONIAL
                 </a>
               </li>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}> 
                 <span><IoBeerOutline/></span>
-                <a href="#" className={`${S.navlink}`}>
+                <a href="/#Reservation" className={`${S.navlink}`}>
                   RESERVATION
                 </a>
               </li>

@@ -1,9 +1,9 @@
 @font-face {
-    src: url(../../Fonts/Amithen.otf);
+    src: url(../../../Fonts/Amithen.otf);
     font-family:'Amithen' 
 }
 @font-face {
-    src: url(../../Fonts/DIN-Bold.ttf);
+    src: url(../../../Fonts/DIN-Bold.ttf);
     font-family:'DIN-BOLD' 
 }
 
@@ -12,7 +12,7 @@
     padding: 0;
     box-sizing: border-box;
     height: calc( 110vh - 116px );
-    background:linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.521),rgba(0, 0, 0, 0.24)) , url(../../images/areial-view.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.521),rgba(0, 0, 0, 0.24)) , url(../../../images/areial-view.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

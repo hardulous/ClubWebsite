@@ -1,11 +1,10 @@
 @font-face {
-    font-family: "DIN-BOLD";
-    src: url(../../Fonts/DIN-Bold.ttf);
+    src: url(../../../Fonts/DIN-Bold.ttf);
+    font-family:'DIN-BOLD';
 }
-
 @font-face {
-    font-family: 'DIN-LIGHT' ;
-    src: url(../../Fonts/DIN-Light.ttf);
+    src: url(../../../Fonts/DIN-Light.ttf);
+    font-family:'DIN-LIGHT';
 }
 
 .ReservationContainer{
@@ -157,9 +156,13 @@
 }
 
 .colCard{
-    padding: 3rem 1rem 3rem 1rem;
+    padding: 1rem 1rem 3rem 1rem;
     background-color: #E4DFD9;
     width: 45%;
+}
+
+.colCard:nth-of-type(1){
+    padding: 4rem 1rem 3rem 1rem;
 }
 
 @media screen and (max-width:1111px) {

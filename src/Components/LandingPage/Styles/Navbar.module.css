@@ -1,6 +1,6 @@
 @font-face {
-    src: url(../../Fonts/DIN-Bold.ttf);
-    font-family: 'DIN-BOLD' ;
+    src: url(../../../Fonts/DIN-Bold.ttf);
+    font-family:'DIN-BOLD';
 }
 
 .head{

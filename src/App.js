@@ -1,8 +1,11 @@
 import React from "react";
-import S from './App.module.css'
+import S from './App.module.css';
 import {BrowserRouter as Router , Routes , Route} from 'react-router-dom'
-import Navbar from "./Components/Navbar";
-import HeaderBody from "./Components/HeaderBody";
+import Navbar from "./Components/LandingPage/Navbar.js";
+import LandingPage from "./Components/LandingPage/LandingPage.js";
+import AboutUsPage from "./Components/AboutUsPage/AboutUsPage.js";
+import ServicePage from "./Components/ServicePage/ServicePage.js";
+import GalleryPage from "./Components/GalleryPage/GalleryPage.js";
 
 function App() {
   return (
@@ -15,7 +18,10 @@ function App() {
 
        <Routes>
 
-        <Route path="/" element={<HeaderBody/>} />
+        <Route path="/" index element={<LandingPage/>} />
+        <Route path="/about" element={<AboutUsPage/>} />
+        <Route path="/service" element={<ServicePage/>} />
+        <Route path="/gallery" element={<GalleryPage/>} />
 
        </Routes>
 

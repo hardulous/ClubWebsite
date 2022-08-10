@@ -1,0 +1,33 @@
+export const TestimonialCardData = [
+
+    {   
+        id:1,
+        name:"",
+        img:"",
+        message:""
+    },
+    {
+        id:2,
+        name:"",
+        img:"",
+        message:""
+    },
+    {
+        id:3,
+        name:"",
+        img:"",
+        message:""
+    },
+    {
+        id:4,
+        name:"",
+        img:"",
+        message:""
+    },
+    {
+        id:5,
+        name:"",
+        img:"",
+        message:""
+    }
+]

@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import S from "./Styles/Reservation.module.css";
 import St from "./Styles/ResCard.module.css";
 import "./Styles/Reservation2.css";
-import "../icomon/style.css";
-import club from '../images/club-imageOne.png'
+import "../../icomon/style.css";
+import club from '../../images/club-imageOne.png'
 
 // react datapicker
 import DatePicker from "react-datepicker";
@@ -27,9 +27,7 @@ const Reservation = () => {
         <div className={`${S.upperHeader}`}>
           <h1>MAKE A RESERVATION</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-            numquam ut vero atque pariatur tenetur ex, repellat quae magni
-            perferendis magnam nulla et recus
+          We are always there to serve you as per your requirement, so get in contact with us today, and we'll take care of all the hassles in preparing for your next event
           </p>
         </div>
         <div className={`${S.upperForm}`}>

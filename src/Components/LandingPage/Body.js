@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import St from "./Styles/Body.module.css"
-import {CardData} from './Data/CardData.js'
+import {CardData} from '../Data/CardData.js'
 import Card from './Card'
 
 const Body = () => {
@@ -46,12 +46,13 @@ const Body = () => {
 
         <div className={`${St.bodyHeading} ${St.fadeIn}`}>
           <h2>
-          A TASTE OF THE COUNTRYSIDE IN THE HEART OF THE CITY
+          HAVE A SEAT AND LET THE FUN BEGIN
           </h2>
         </div>
 
         <div className={`${St.bodyOneText} ${St.fadeIn}`}>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos atque recusandae at et temporibus saepe dolor ab cum laudantium natus iste earum nihil qui autem nam, repellat pariatur, quo ad?Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis alias inventore tempora. Illum ipsa assumenda, velit nostrum architecto ex, maiores ipsum laudantium doloremque aliquam nesciunt omnis iusto maxime rerum reprehenderit.</p>
+          <p>Tranform your mediocre day into luxurious and exciting experience at the king's restaurant and bar located in the hear of the millennium city - gurgaon.<br /><br />King's is all about serving for all tastes and all occasions.So whether you are catching up with your friends, family, or date, or want to have a corporate event, we aim to harbour you for any situation.Your guests will be thrilled as you bring your event to reality.<br /><br />
+          </p>
         </div>
 
       </div>
@@ -61,7 +62,7 @@ const Body = () => {
           {
             CardData.map((card,i)=>{
 
-              return  <div className={`col-12 col-sm-6 col-md-4 col-lg mb-3 ${St.slideIn}`} key={i}>
+              return  <div className={`col-12 col-sm-6 col-md-3 mb-3 ${St.slideIn}`} key={i}>
               <Card card={card}/>
             </div>
 

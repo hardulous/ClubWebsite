@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import S from './Styles/Card.module.css'
+import img from "../../images/icon-beer.png"
 
 const Card = ( props ) => {
 
@@ -10,7 +11,7 @@ const Card = ( props ) => {
     <div className={`${S.card}`}>
 
       <a href="#">
-        {icon}        
+        <img src={icon} alt={`${alias}.png`} />        
         <span className={`${S.iconText}`}>{alias}</span>
       </a>
 

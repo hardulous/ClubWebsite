@@ -1,7 +1,7 @@
 import React from 'react'
 import S from "./Styles/Footer.module.css"
-import logo from "../images/club-logo-fin.png"
-import "../icomon/style.css"
+import logo from "../../images/club-logo-fin.png"
+import "../../icomon/style.css"
 
 
 const Footer = () => {
@@ -17,15 +17,15 @@ const Footer = () => {
 
     <div className={`${S.footerMain}`}>
         <div className={`${S.card1}`}>
-          <p>Open At : 6:00 PM To 2:00 AM</p>
-          <a href="mailto:amanbisht123abc@gmail.com" className='icon-envelop'>amanbisht123abc@gmail</a>
+          <p>Open At : 12:00 AM To 8:00 AM</p>
+          <a href="support@kingrestaurantandbar.com" className='icon-envelop'>support@kingrestaurantandbar.com</a>
         </div>
         <div className={`${S.card2}`}>
           <img src={logo} alt="" />
         </div>
         <div className={`${S.card3}`}>
-          <a href='tel:18001234567' className='icon-phone'>1 (800) 123-4567</a>
-          <p>Mg Road,Gurugram,Haryana:110023</p>
+          <a href='tel:8588888808' className='icon-phone'>91+ 8588888808</a>
+          <p>Mg Road, Gurugram, Haryana: 122015</p>
         </div>
         <div className={`${S.MediaContainer}`}>
           <ul>

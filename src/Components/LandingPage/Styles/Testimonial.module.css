@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'DIN-BOLD';
+    src: url(../../../Fonts/DIN-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'DIN-LIGHT';
+    src: url(../../../Fonts/DIN-Light.ttf);
+}
+
+.TestimonialContainer{
+    height: 75vh;
+    padding: 1rem;
+    background-color: #1e1e1e;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+}
+
+.TestimonialContainer h1{
+    position: absolute;
+    top: 4%;
+    color: #F1C761;
+    font-size: 2.3rem;
+    font-family: 'DIN-BOLD';
+}
+
+.TestimonialMain{
+    width: 70%;
+    margin-top: 3rem
+}
+
+.Testimonial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonialImg{
+    width: 157px;
+    height: 157px;
+    border: 4px solid #F1C761;
+    background-image: url(../../../images/testimonial.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.testimonialText{
+    width: 65%;
+    margin-top: 1rem;
+}
+
+.testimonialText p{
+    text-align: center;
+    margin: 0px;
+    font-family: 'DIN-LIGHT';
+    font-weight: bolder;
+    margin: 1rem 0rem;
+}
+
+.testimonialText h4{
+    text-align: center;
+    font-family: 'DIN-BOLD';
+    color: #98f9f5;
+    margin: 0px;
+}
+
+.testimonialText h4 span{
+    color: #F1C761;
+}

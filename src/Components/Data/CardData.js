@@ -1,33 +1,32 @@
+import beer from "../../images/icon-beer.png";
+import dj from "../../images/icon-dj.png";
+import food from "../../images/icon-food.png";
+import occasion from "../../images/icon-occasion.png";
+
 export const CardData = [
 
     {
-        name:'live sports',
-        icon:<i className="fa-solid fa-futbol"></i>,
-        desc:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus corporis eligendi magni sunt blanditiis quibusdam asperiores deleniti.',
-        alias:'LS'
+        name:'OCCASION',
+        icon:occasion,
+        desc:"Organize your own party to the unofficial bachelorette , your birthday to your anniversary with king's ambiance and specially designed and decorated themes for every occasion",
+        alias:'OC'
     },
     {
-        name:'xbox gaming',
-        icon:<i className="fa-brands fa-xbox"></i>,
-        desc:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus corporis eligendi magni sunt blanditiis quibusdam asperiores deleniti.',
-        alias:'XG'
+        name:'LIVE DJ',
+        icon:dj,
+        desc:"King's bar and restaurant has the best live DJ , you can dance away your worries and enjoy the vibrant music. there are also many events where various DJs come to demonstrate their skills",
+        alias:'LD'
     },
     {
-        name:'award ceremony',
-        icon:<i className="fa-solid fa-award"></i>,
-        desc:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus corporis eligendi magni sunt blanditiis quibusdam asperiores deleniti.',
-        alias:'AC'
+        name:'DRINKS AND BEVERAGES',
+        icon:beer,
+        desc:"We have everything from tequila shots to whiskey to quench your thrist. we serve variety of drinks spanning from alcoholic to non-alcoholic to sugary drinks",
+        alias:'DB'
     },
     {
-        name:'chess',
-        icon:<i className="fa-solid fa-chess"></i>,
-        desc:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus corporis eligendi magni sunt blanditiis quibusdam asperiores deleniti.',
-        alias:'Ch'
+        name:'FOOD',
+        icon:food,
+        desc:"we are here to welcome all the foodies out there with our diverse range of cuisines from all over the globe especially cooked and crafted by our expert chiefs.",
+        alias:'FD'
     },
-    {
-        name:'music',
-        icon:<i className="fa-solid fa-music"></i>,
-        desc:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus corporis eligendi magni sunt blanditiis quibusdam asperiores deleniti.',
-        alias:'MU'
-    }
 ]

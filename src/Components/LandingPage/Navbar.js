@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link , useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import S from "./Styles/Navbar.module.css";
-import logoTwo from '../../images/club-logo-fin.png'
-import {IoBeerOutline} from 'react-icons/io5'
-import {VscFeedback} from 'react-icons/vsc' 
-import {AiOutlineArrowUp} from 'react-icons/ai'
+import logoTwo from "../../images/club-logo-fin.png";
+import { IoBeerOutline } from "react-icons/io5";
+import { VscFeedback } from "react-icons/vsc";
+import { AiOutlineArrowUp } from "react-icons/ai";
 
 const Navbar = () => {
   // state variable to hide and show ham menu
@@ -15,38 +15,27 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    
     const scrollElement = document.querySelector(`.${S.scrollTop}`);
 
-    const topElement = document.querySelector(`.${S.head}`)
+    const topElement = document.querySelector(`.${S.head}`);
 
-    const scrollTop = (e)=>{
-       console.log("TOP")
-       topElement.scrollIntoView({
-        behavior: "smooth"
-       })
+    const scrollTop = (e) => {
+      console.log("TOP");
+      topElement.scrollIntoView({
+        behavior: "smooth",
+      });
+    };
 
-    }
-
-    document.addEventListener('scroll',()=>{
-      
-      if(window.scrollY > 170){
-
-        scrollElement.classList.add(`${S.active}`)
-        scrollElement.addEventListener("click",scrollTop);
-
+    document.addEventListener("scroll", () => {
+      if (window.scrollY > 170) {
+        scrollElement.classList.add(`${S.active}`);
+        scrollElement.addEventListener("click", scrollTop);
+      } else {
+        scrollElement.classList.remove(`${S.active}`);
+        scrollElement.removeEventListener("click", scrollTop);
       }
-
-      else{
-
-        scrollElement.classList.remove(`${S.active}`)
-        scrollElement.removeEventListener("click",scrollTop);
-
-      }
-
-    })
-  }, [])
-  
+    });
+  }, []);
 
   return (
     <div className={`${S.head}`}>
@@ -60,9 +49,56 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
-                <Link to="/about" className={`${S.navlink}`}>
-                  ABOUT US
-                </Link>
+                <a href="#" className={`${S.navlink}`}>
+                  MENU
+                </a>
+
+                <ul className={S.subMenu}>
+                  <li>
+                    <a href="#">Drinks</a>
+
+                    <ul className={S.subMenu}>
+                      <li>
+                        <a href="#">Alcoholic</a>
+                      </li>
+                      <li>
+                        <a href="#">Non-Alcoholic</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <a href="#">Tables</a>
+
+                    <ul className={S.subMenu}>
+                      <li>
+                        <a href="#">Veg</a>
+
+                        <ul className={S.subMenu}>
+                          <li>
+                            <a href="#">Starters</a>
+                          </li>
+                          <li>
+                            <a href="#">Main Course</a>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li>
+                        <a href="#">Non-Veg</a>
+
+                        <ul className={S.subMenu}>
+                          <li>
+                            <a href="#">Starters</a>
+                          </li>
+                          <li>
+                            <a href="#">Main Course</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </li>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
                 <Link to="/gallery" className={`${S.navlink}`}>
@@ -70,27 +106,35 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
-                <Link to="/menu" className={`${S.navlink}`}>
-                  MENU
+                <Link to="/About" className={`${S.navlink}`}>
+                  ABOUT
                 </Link>
               </li>
             </ul>
 
             <ul className={`${S.navmenu2} ${S.marginutil} ${S.paddingutil}`}>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
-                <img src={logoTwo} alt="club-logo" className={`${S.navimage}`} />
+                <img
+                  src={logoTwo}
+                  alt="club-logo"
+                  className={`${S.navimage}`}
+                />
               </li>
             </ul>
 
             <ul className={`${S.navmenu3} ${S.marginutil} ${S.paddingutil}`}>
-              <li className={`${S.navitem} ${showHam ? S.active : ""}`}> 
-                <span><VscFeedback/></span>
+              <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
+                <span>
+                  <VscFeedback />
+                </span>
                 <a href="/#Testimonial" className={`${S.navlink}`}>
                   TESTIMONIAL
                 </a>
               </li>
-              <li className={`${S.navitem} ${showHam ? S.active : ""}`}> 
-                <span><IoBeerOutline/></span>
+              <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
+                <span>
+                  <IoBeerOutline />
+                </span>
                 <a href="/#Reservation" className={`${S.navlink}`}>
                   RESERVATION
                 </a>
@@ -107,12 +151,11 @@ const Navbar = () => {
             <span className={`${S.bar}`}></span>
             <span className={`${S.bar}`}></span>
           </div>
-          
+
           {/* Scroll to top */}
           <div className={`${S.scrollTop}`}>
-            <AiOutlineArrowUp/>
+            <AiOutlineArrowUp />
           </div>
-
         </nav>
       </header>
     </div>

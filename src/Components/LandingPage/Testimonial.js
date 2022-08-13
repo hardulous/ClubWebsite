@@ -18,14 +18,13 @@ const Testimonial = () => {
     speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
     autoplaySpeed: 4000
 
   };
 
   useEffect(() => {
     
-    play();
+    // play();
    
 
   }, [])
@@ -33,10 +32,6 @@ const Testimonial = () => {
 
   const play =()=>{
     slider.current.slickPlay();
-  }
-
-  const pause =()=>{
-    slider.current.slickPause();
   }
 
   return (

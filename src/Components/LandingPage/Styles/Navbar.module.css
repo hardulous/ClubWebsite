@@ -77,6 +77,126 @@
     transition-delay: 100ms;
 }
 
+
+/* Hover drop down css start */
+.navmenu1 li:nth-child(2){
+    position: relative;
+}
+
+.subMenu li{
+    list-style: none;
+    padding: 12px;
+    font-weight: 900;
+}
+
+.subMenu a{
+    text-decoration: none;
+    font-family: 'DIN-BOLD';
+    color: #fdfdfdd6;
+    transition: 0.7s ease;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.subMenu a:hover{
+    color: #F1C761;
+}
+
+.subMenu a::after{
+    content: "";
+    position: absolute;
+    background-color: #F1C761;
+    height: 3px;
+    width: 0%;
+    left: 0%;
+    top: 100%;
+    transition: 0.3s;
+}
+
+.subMenu a:hover::after{
+   width: 100%;
+}
+
+.subMenu::before{    /* css for trianle arrow */
+    content: "";
+    position: absolute;
+    top: -1.4rem;
+    left: 2rem;
+    border: 0.6rem solid transparent;
+    border-bottom-color: #F1C761;
+}
+
+.subMenu .subMenu::before{ 
+    
+    /* css for triangle arrow in nested submenu*/
+    top: 0rem;
+    left: -1.4rem;
+    border: 0.6rem solid transparent;
+    border-right-color: #F1C761;
+}
+
+.subMenu{
+    width: 9rem;
+    position: absolute;
+    display: block;
+    border-top: 3px solid #F1C761;
+    background-color: #060606;
+    z-index: 100;
+    top: 10rem;
+    opacity: 0;
+    visibility: hidden; /* must not use display none because as a result element will be removed from DOM but by visibility element will remain in DOM for animation */
+    transition: all 650ms ease;
+}
+
+.subMenu .subMenu{
+    top: 0%;
+    left :160%;
+    border:none;
+    border-left: 3px solid #F1C761;
+}
+
+/* now when hover on the li which have sub menu then they appear animated  */
+.navmenu1 li:hover > .subMenu{
+    top: 6rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.subMenu li:hover > .subMenu{
+    left: 100%;
+    top: 0%;
+}
+
+@media screen and (max-width:873px) {
+
+   .subMenu{
+        position: initial; /* here for mobile viewport removing all position property in dropdown */
+        border: 3px solid transparent;
+        margin-left: 0rem; /* for indentation of border */
+        max-height: 0px;  /* by this the visibility none sub-menu will not take height */
+    }
+
+    .subMenu::before{
+        display: none;
+    }
+
+    .navmenu1 li:hover > .subMenu{
+        opacity: 1;
+        visibility: visible;
+        max-height: initial;
+        border-left: 3px solid #F1C761;
+    }
+
+    .subMenu li{
+        transform: translateX(0%) !important;
+    }
+
+}
+
+/* hover drop down css end */
+
+
+
 .navmenu2 li{
     transition: transform 500ms ease;
     transition-delay: 200ms;
@@ -212,7 +332,7 @@
     }
 
     .menu{
-        top: 50px;
+        top: 0px;
         background-color: #060606;
         width: 100%;
         height: 100%;
@@ -222,6 +342,8 @@
         left: -100%;
         position: fixed;
         transition: all 0.3s;
+        overflow-y: scroll; /* here by this when hovering on drop down , rest of the item will be moved downward so rest of item get hide below and fix this */
+        overflow-x: hidden;
     }
     .navbar{
         border: none;
@@ -294,5 +416,5 @@
     .navmenu3 .navitem:nth-child(2) .navlink{
         color: #F1C761;
     }
-
+    
 }

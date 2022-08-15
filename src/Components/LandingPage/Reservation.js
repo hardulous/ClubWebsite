@@ -13,13 +13,13 @@ const Reservation = () => {
   // state variable for calendar
   const [selectedDay, setSelectedDay] = useState(new Date());
 
-  console.log(`
+  // console.log(`
   
-    Day = ${selectedDay.getDate()}
-    Month = ${selectedDay.getMonth()}
-    Year = ${selectedDay.getFullYear()}
+  //   Day = ${selectedDay.getDate()}
+  //   Month = ${selectedDay.getMonth()}
+  //   Year = ${selectedDay.getFullYear()}
   
-  `);
+  // `);
 
   return (
     <div className={`${S.resMain}`}>

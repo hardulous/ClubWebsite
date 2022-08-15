@@ -4,8 +4,6 @@ import "./Styles/Testimonial2.css";
  
 const TestimonialCard = ({data}) => { 
   
-  console.log(data)
-
   return (
 
     <div className={`${S.Testimonial}`}>

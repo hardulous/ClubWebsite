@@ -3,13 +3,11 @@ import S from "./Styles/HeaderBody.module.css";
 import St from "./Styles/Body.module.css";
 import Ss from "./Styles/BodyTwo.module.css";
 import Sst from "./Styles/Reservation.module.css";
-import S2 from "./Styles/Footer.module.css";
 import S1 from "./Styles/Testimonial.module.css";
 import beer from '../../images/Wine-final.png';
 import Body from "./Body";
 import BodyTwo from "./BodyTwo";
 import Reservation from "./Reservation";
-import Footer from "./Footer";
 import Testimonial from "./Testimonial";
 
 const HeaderBody = () => {
@@ -144,12 +142,12 @@ const HeaderBody = () => {
        <Testimonial/>
     </div>
 
-    <div className={`${S2.FooterContainer}`}>
+    {/* <div className={`${S2.FooterContainer}`}>
        <div className={`${S2.footerBanner}`}>
          <h4>Give your tastebuds a<br />taste of ultimate authority</h4>
        </div>
        <Footer/>
-    </div>
+    </div> */}
 
     </>
 

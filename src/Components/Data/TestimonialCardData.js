@@ -3,6 +3,7 @@ import garima from "../../images/garima.jpg.jpeg"
 import ankit from "../../images/ankit.jpg"
 import jasika from "../../images/jasika.jpg"
 import aman from "../../images/aman.jpg"
+import akshat from "../../images/akshat.PNG"
 
 export const TestimonialCardData = [
 
@@ -44,7 +45,7 @@ export const TestimonialCardData = [
     {
         id:6,
         name:"Akshat",
-        img:"",
+        img:akshat,
         message:"My family,friends and i have my birthday celebration at king restaurant & bar. We reserved our table beforehand. And i can say that we have a wonderful time there. The staff was great, and the food was delicious. The DJ was spectacular. If you are planning to have a celebration then i would recommend this place",
         dsg:"Content Writer"
     }

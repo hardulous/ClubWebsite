@@ -9,7 +9,7 @@
     z-index: 2;
 }
 
-.header{
+.head header{
     background-color: #060606;
     padding: 12px;
     /* position: fixed; */
@@ -24,7 +24,7 @@
     padding: 0;
 }
 
-.navbar{
+.head header nav{
     border: 1px solid #F1C761;
     position: relative;
     height: 128px;
@@ -58,7 +58,7 @@
     align-items: center;
 }
 
-.navmenu3 .navitem:nth-child(2) .navlink{
+.navmenu3 li:nth-child(2) a{
     color: #F1C761;
 }
 
@@ -68,7 +68,7 @@
     font-weight: 900;
 }
 
-.navmenu2 .navitem::before{
+.navmenu2 li::before{
     display: none;
 }
 
@@ -136,7 +136,7 @@
 }
 
 .subMenu{
-    width: 9rem;
+    width: 11rem;
     position: absolute;
     display: block;
     border-top: 3px solid #F1C761;
@@ -174,6 +174,7 @@
         border: 3px solid transparent;
         margin-left: 0rem; /* for indentation of border */
         max-height: 0px;  /* by this the visibility none sub-menu will not take height */
+        width:12rem;
     }
 
     .subMenu::before{
@@ -189,6 +190,8 @@
 
     .subMenu li{
         transform: translateX(0%) !important;
+        position: relative;
+        left: -18%;  /* this will make nested dropdown come close to each other */
     }
 
 }
@@ -203,11 +206,12 @@
 }
 
 .navmenu3 li{
-    transition: transform 500ms ease;
-    transition-delay: 300ms;
+    transition-property: background transform;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
 }
 
-.navmenu3 .navitem::before{
+.navmenu3 li:before{
     content: ""; 
     color:transparent; 
     font-weight: bold;
@@ -216,11 +220,11 @@
     margin-left: 0px;
 }
 
-.navmenu3 .navitem{
+.navmenu3 li{
     position: relative;
 }
 
-.navmenu3 .navitem span{
+.navmenu3 li span{
     color: #F1C761;
     position: absolute;
     left: -1.4rem;
@@ -252,6 +256,36 @@
     transition: 0.3s;
 }
 
+.navmenu3 li:nth-child(2) .navlink::after{
+    height: 0px;
+}
+
+.navmenu3 li:nth-child(2){
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navmenu3 li:nth-child(2) span{
+    position: static;
+    margin-bottom: 1rem;
+}
+
+.navmenu3 li:nth-child(2):hover{
+    background-color: #F1C761;
+}
+
+.navmenu3 li:nth-child(2):hover span{
+    color: #060606;
+} 
+
+.navmenu3 li:nth-child(2):hover a{
+    color: #060606;
+}
+
+
 .navlink:hover::after{
    width: 100%;
 }
@@ -274,12 +308,14 @@
     transform: translateY(-50%)
 }
 
-.bar{
+.hamburger span{
     background-color: whitesmoke;
     width: 100%;
     height: 4px;
     transition: 0.4s; 
 }
+
+/* Scroll to top css start */
 
 .scrollTop{
     color: #F1C761;
@@ -308,7 +344,29 @@
     font-size: 4rem;
 }
 
-@media screen and (max-width:873px) {
+/* Scroll to top css end */
+
+/* Custom cursor tracker css start */
+
+.tracker{
+  position: fixed;
+  transform: translate(-50%,-50%);
+  z-index: 9999;
+  width: 40px;
+  pointer-events: none;
+  transition: all .15s;
+}
+
+.tracker img{
+    width: 52px;
+    height: 74px;
+    object-fit: contain;
+    opacity: 0.9;
+}
+
+/* Custom curstor tracker css end */
+
+@media screen and (max-width:890px) {
 
     .hamburger{
         display: flex;
@@ -319,15 +377,15 @@
         width: 100%;
     }
 
-    .hamburger.active .bar:nth-child(2){
+    .hamburger.active span:nth-child(2){
         opacity: 0;
     }
 
-    .hamburger.active .bar:nth-child(1){
+    .hamburger.active span:nth-child(1){
         transform: rotate(44deg) translateY(8px);
     }
 
-    .hamburger.active .bar:nth-child(3){
+    .hamburger.active span:nth-child(3){
         transform: rotate(-45deg) translate(3px,-12px);
     }
 
@@ -345,7 +403,7 @@
         overflow-y: scroll; /* here by this when hovering on drop down , rest of the item will be moved downward so rest of item get hide below and fix this */
         overflow-x: hidden;
     }
-    .navbar{
+    .head header nav{
         border: none;
         height: 46px;;
     }
@@ -364,6 +422,14 @@
     .navmenu3{
         flex-direction: column;
         width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navmenu3 li:nth-child(2) , .navmenu3 li:nth-child(1){
+        height: auto;
+        width: 100%;
+        display: block;
     }
 
     .navmenu1 li{
@@ -378,7 +444,7 @@
         transform: translateX(300%);
     }
 
-    .navmenu1 .navitem.active{
+    .navmenu1 li.active{
         transform: translateX(45%);
     }
 
@@ -386,20 +452,22 @@
         transform: translateX(-65%);
     }
 
-    .navmenu2 .navitem.active{
+    .navmenu2 li.active{
         transform: translateX(0%);
     }
 
     .navmenu3 li:nth-child(odd){
-        transform: translateX(-25%);
+        transform: translateX(0px);
+        text-align: center;
     }
 
     .navmenu3 li:nth-child(even){
-        transform: translateX(300%);
+        transform: translateX(0px);
+        text-align: center;
     }
 
-    .navmenu3 .navitem.active{
-        transform: translateX(42%);
+    .navmenu3 li:nth-child(2) span , .navmenu3 li:nth-child(1) span{
+        position: static;
     }
 
     .head{
@@ -411,10 +479,6 @@
         justify-content: space-around;
         height: auto;
         align-items: normal;
-    }
-    
-    .navmenu3 .navitem:nth-child(2) .navlink{
-        color: #F1C761;
     }
     
 }

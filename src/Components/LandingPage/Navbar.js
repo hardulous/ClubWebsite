@@ -5,14 +5,42 @@ import logoTwo from "../../images/club-logo-fin.png";
 import { IoBeerOutline } from "react-icons/io5";
 import { VscFeedback } from "react-icons/vsc";
 import { AiOutlineArrowUp } from "react-icons/ai";
+import beer from "../../images/Wine-final.png"
 
 const Navbar = () => {
+
   // state variable to hide and show ham menu
   const [showHam, setshowHam] = useState(false);
-
+  
+  // using location object
+  const location = useLocation()
   const toggleHam = () => {
+    
+    // if hamburger menu is open then body scroll is removed else shown
+    if(!showHam){
+      document.body.style.overflowY="hidden"
+    }
+    else{
+      document.body.style.overflowY="scroll"
+    }
+
     setshowHam(!showHam);
   };
+
+  // function to style the current url present in browser
+  const isActiveUrl = (path)=>{
+    
+    console.log(path,location.pathname)
+    if(location.pathname===path){
+      return {
+        color:"#F1C760"
+      }
+    }
+    else{
+      return null
+    }
+
+  }
 
   useEffect(() => {
     const scrollElement = document.querySelector(`.${S.scrollTop}`);
@@ -20,7 +48,6 @@ const Navbar = () => {
     const topElement = document.querySelector(`.${S.head}`);
 
     const scrollTop = (e) => {
-      console.log("TOP");
       topElement.scrollIntoView({
         behavior: "smooth",
       });
@@ -35,16 +62,56 @@ const Navbar = () => {
         scrollElement.removeEventListener("click", scrollTop);
       }
     });
+    
+    const tracker = document.querySelector(`.${S.tracker}`);
+
+    document.body.addEventListener('mousemove',(e)=>{
+
+      tracker.style.left = `${e.clientX}px`
+      tracker.style.top = `${e.clientY}px`
+
+    })
+
   }, []);
+
+  // this useeffect handle the case whenever we hit new url on browser we will go to top 0px height on that page with smooth effect and for new navbar for route other than home
+  useEffect(()=>{
+     
+    window.scrollTo({ top: 0 , behavior:"smooth"});
+
+    const navbar = document.querySelector(`.${S.head} header`);
+    
+    if(location.pathname==="/"){
+      navbar.style.backgroundColor = "#060606"
+      navbar.parentElement.style.position="relative"
+    }
+    else{
+      navbar.style.backgroundColor = "transparent"
+      navbar.parentElement.style.position="absolute"
+    }
+
+  },[location])
 
   return (
     <div className={`${S.head}`}>
-      <header className={`${S.header}`}>
-        <nav className={`${S.navbar}`}>
+      <header>
+        <nav>
           <div className={`${S.menu} ${showHam ? S.active : ""}`}>
             <ul className={`${S.navmenu1} ${S.marginutil} ${S.paddingutil}`}>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
-                <Link to="/" className={`${S.navlink}`}>
+                <Link to="/" className={`${S.navlink}`}
+                
+                // handling case for desktop view clicking on any of link will not hide the vertical scroll
+                onClick={()=>{
+                  if(showHam) toggleHam()
+                  else return
+                }}
+
+                style={
+                  isActiveUrl("/")
+                }
+                
+                >
                   HOME
                 </Link>
               </li>
@@ -59,10 +126,24 @@ const Navbar = () => {
 
                     <ul className={S.subMenu}>
                       <li>
-                        <a href="#">Alcoholic</a>
+                        <a href="#"
+                        
+                        onClick={()=>{
+                          if(showHam) toggleHam()
+                          else return
+                        }}
+
+                        >Alcoholic</a>
                       </li>
                       <li>
-                        <a href="#">Non-Alcoholic</a>
+                        <a href="#"
+                        
+                        onClick={()=>{
+                          if(showHam) toggleHam()
+                          else return
+                        }}
+
+                        >Non-Alcoholic</a>
                       </li>
                     </ul>
                   </li>
@@ -76,10 +157,24 @@ const Navbar = () => {
 
                         <ul className={S.subMenu}>
                           <li>
-                            <a href="#">Starters</a>
+                            <a href="#"
+                            
+                            onClick={()=>{
+                              if(showHam) toggleHam()
+                              else return
+                            }}
+
+                            >Starters</a>
                           </li>
                           <li>
-                            <a href="#">Main Course</a>
+                            <a href="#"
+                            
+                            onClick={()=>{
+                              if(showHam) toggleHam()
+                              else return
+                            }}
+
+                            >Main Course</a>
                           </li>
                         </ul>
                       </li>
@@ -89,10 +184,24 @@ const Navbar = () => {
 
                         <ul className={S.subMenu}>
                           <li>
-                            <a href="#">Starters</a>
+                            <a href="#"
+                            
+                            onClick={()=>{
+                              if(showHam) toggleHam()
+                              else return
+                            }}
+
+                            >Starters</a>
                           </li>
                           <li>
-                            <a href="#">Main Course</a>
+                            <a href="#"
+                            
+                            onClick={()=>{
+                              if(showHam) toggleHam()
+                              else return
+                            }}
+
+                            >Main Course</a>
                           </li>
                         </ul>
                       </li>
@@ -101,12 +210,34 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
-                <Link to="/gallery" className={`${S.navlink}`}>
+                <Link to="/gallery" className={`${S.navlink}`}
+                
+                onClick={()=>{
+                  if(showHam) toggleHam()
+                  else return
+                }}
+
+                style={
+                  isActiveUrl("/gallery")
+                }
+
+                >
                   GALLERY
                 </Link>
               </li>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
-                <Link to="/About" className={`${S.navlink}`}>
+                <Link to="/about" className={`${S.navlink}`}
+                
+                onClick={()=>{
+                  if(showHam) toggleHam()
+                  else return
+                }}
+
+                style={
+                  isActiveUrl("/about")
+                }
+                
+                >
                   ABOUT
                 </Link>
               </li>
@@ -147,9 +278,9 @@ const Navbar = () => {
             className={`${S.hamburger} ${showHam ? S.active : ""}`}
             onClick={toggleHam}
           >
-            <span className={`${S.bar}`}></span>
-            <span className={`${S.bar}`}></span>
-            <span className={`${S.bar}`}></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
 
           {/* Scroll to top */}
@@ -157,6 +288,12 @@ const Navbar = () => {
             <AiOutlineArrowUp />
           </div>
         </nav>
+
+         {/* Custom cursor tracker */}
+         <div className={S.tracker}>
+           <img src={beer}/>
+         </div>
+
       </header>
     </div>
   );

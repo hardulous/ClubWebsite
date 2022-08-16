@@ -17,7 +17,7 @@ const HeaderBody = () => {
 
     if (showBeer) {
 
-      setTimeout(() => {
+    var stopTimeOut=setTimeout(() => {
 
         document.querySelector(`.${S.beer}`).classList.add(`${S.active}`);
 
@@ -45,6 +45,11 @@ const HeaderBody = () => {
       }, 3000);
 
     }
+
+    return ()=>{
+      clearTimeout(stopTimeOut);
+    }
+
   }, [showBeer]);
 
   const animate = (text,index,textInTimer,textOutTimer,textLength) => {

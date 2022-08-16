@@ -229,7 +229,7 @@
     position: absolute;
     left: -1.4rem;
     font-size: 2rem;
-    top: -0.2rem;
+    top: -0.3rem;
 }
 
 .navlink{
@@ -358,10 +358,10 @@
 }
 
 .tracker img{
-    width: 52px;
-    height: 74px;
+    width: 35px;
+    height: 40px;
     object-fit: contain;
-    opacity: 0.9;
+    opacity: 1;
 }
 
 /* Custom curstor tracker css end */

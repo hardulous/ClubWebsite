@@ -3,9 +3,9 @@ import { Link, useLocation } from "react-router-dom";
 import S from "./Styles/Navbar.module.css";
 import logoTwo from "../../images/club-logo-fin.png";
 import { IoBeerOutline } from "react-icons/io5";
-import { VscFeedback } from "react-icons/vsc";
+import { HiOutlinePhotograph } from "react-icons/hi";
 import { AiOutlineArrowUp } from "react-icons/ai";
-import beer from "../../images/Wine-final.png"
+import cursor from "../../images/cursor.png"
 
 const Navbar = () => {
 
@@ -30,7 +30,6 @@ const Navbar = () => {
   // function to style the current url present in browser
   const isActiveUrl = (path)=>{
     
-    console.log(path,location.pathname)
     if(location.pathname===path){
       return {
         color:"#F1C760"
@@ -210,7 +209,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
-                <Link to="/gallery" className={`${S.navlink}`}
+                <Link to="/service" className={`${S.navlink}`}
                 
                 onClick={()=>{
                   if(showHam) toggleHam()
@@ -218,11 +217,11 @@ const Navbar = () => {
                 }}
 
                 style={
-                  isActiveUrl("/gallery")
+                  isActiveUrl("/service")
                 }
 
                 >
-                  GALLERY
+                  SERVICE
                 </Link>
               </li>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
@@ -256,11 +255,22 @@ const Navbar = () => {
             <ul className={`${S.navmenu3} ${S.marginutil} ${S.paddingutil}`}>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
                 <span>
-                  <VscFeedback />
+                  <HiOutlinePhotograph />
                 </span>
-                <a href="/#Testimonial" className={`${S.navlink}`}>
-                  TESTIMONIAL
-                </a>
+                <Link to="/gallery" className={`${S.navlink}`}
+                
+                onClick={()=>{
+                  if(showHam) toggleHam()
+                  else return
+                }}
+
+                style={
+                  isActiveUrl("/gallery")
+                }
+                
+                >
+                  GALLERY
+                </Link>
               </li>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
                 <span>
@@ -291,7 +301,7 @@ const Navbar = () => {
 
          {/* Custom cursor tracker */}
          <div className={S.tracker}>
-           <img src={beer}/>
+           <img src={cursor}/>
          </div>
 
       </header>

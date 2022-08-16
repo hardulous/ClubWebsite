@@ -3,7 +3,7 @@
   src: url(../../../Fonts/DIN-Bold.ttf);
 }
 
-.aboutContainer{
+.aboutHeaderContainer{
   height: 100vh;
   background: linear-gradient(rgba(10, 10, 10, 0.897),rgba(0, 0, 0, 0.288),rgba(10, 10, 10, 0.829)) , url(../../../images/club-image.png);
   background-size: cover;
@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.aboutContainer h1{
+.aboutHeaderContainer h1{
   font-family: 'DIN-BOLD';
   font-size: 4rem;
   color: #ffffff;
@@ -25,7 +25,19 @@
   transition-delay: 1s;
 }
 
-.aboutContainer h1.fadeIn{
+.aboutHeaderContainer h1.fadeIn{
    opacity: 1;
    transform: translateY(0%);
+}
+
+.aboutBody{
+  background-color: #EFEDE8;
+  min-height: 400vh;
+  padding: 2rem 1rem;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

@@ -1,0 +1,23 @@
+.imgContainer{
+  width: 40%;
+}
+
+.imgContainer img{
+    width: 100%;
+}
+
+.cardContainer{
+    width: 50%;
+    box-shadow: 1px 1px 5px #00000066, -1px -1px 5px #0000005c;
+    border-top: 2px solid gold;
+}
+
+.cardContainer h4{
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+.cardContainer p{
+    text-align: justify;
+    padding: 0rem 2rem;
+}

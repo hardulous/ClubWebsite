@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 /* custom scrollbar css */
 
 ::-webkit-scrollbar{

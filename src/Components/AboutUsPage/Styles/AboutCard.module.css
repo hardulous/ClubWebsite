@@ -1,23 +1,150 @@
+@font-face {
+    font-family: 'DIN-BOLD';
+    src: url(../../../Fonts/DIN-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'DIN-LIGHT';
+    src: url(../../../Fonts/DIN-Light.ttf);
+}
+
 .imgContainer{
   width: 40%;
 }
 
 .imgContainer img{
     width: 100%;
+    transition: transform 400ms;
+}
+
+.imgContainer img:hover{
+    transform: scale(1.1,1.1);
 }
 
 .cardContainer{
     width: 50%;
-    box-shadow: 1px 1px 5px #00000066, -1px -1px 5px #0000005c;
-    border-top: 2px solid gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow:2px 2px 4px #00000059;
+    background-color: #E4DFD8;
+    transition-property: transform box-shadow;
+    transition-duration: 400ms;
+    position: relative;
+}
+
+.cardContainer::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 0%;
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    transition: all 1s ease;
+}
+
+.cardContainer::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0%;
+    height: 0%;
+    box-sizing: border-box;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    transition: all 800ms ease;
+}
+
+.cardContainer:hover::after,.cardContainer:hover::before{
+    width: 100%;
+    height: 100%;
+    border-color: #F1C761;
+}
+
+.cardContainer:hover h4{
+    color: #F1C761 ;
+}
+
+.cardContainer:hover{
+    box-shadow: none;
+    transform: scale(1.1,1.1);
 }
 
 .cardContainer h4{
     text-align: center;
     padding: 1rem 0rem;
+    font-family: 'DIN-BOLD';
+    color: #4e4e4e;
+    transition: color 400ms;
+    z-index: 2;
 }
 
 .cardContainer p{
     text-align: justify;
-    padding: 0rem 2rem;
+    padding: 0rem 2rem 1rem 2rem;
+    font-family: 'DIN-LIGHT';
+    font-weight: bolder;
+    color: #746969;
+    z-index: 2;
+}
+
+@media screen and (max-width:876px) {
+   
+    .imgContainer{
+      width: 40%;
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+    }
+
+    .imgContainer img{
+        height: 70%;
+    }
+  
+}
+
+@media screen and (max-width:696px) {
+    
+    .imgContainer{
+        width: 70%;
+        align-self: center;
+        order: 1;
+    }
+
+    .cardContainer{
+        width: 91%;
+        margin-top: 1rem;
+        order: 2;
+    }
+
+}
+
+@media screen and (max-width:492px) {
+    
+    .cardContainer p{
+        font-size: 0.7rem;
+    }
+}
+
+.leftCard{
+    transform: translateX(-50%);
+}
+
+.rightCard{
+    transform: translateX(50%);
+}
+
+.leftCard,.rightCard{
+    opacity: 0;
+    transition: opacity 250ms ease-in , transform 400ms ease-in;
+}
+
+.leftCard.appear , .rightCard.appear{
+    opacity: 1;
+    transform: translateX(0%);
 }

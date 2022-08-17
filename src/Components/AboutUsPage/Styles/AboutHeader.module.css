@@ -40,4 +40,13 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width:696px) {
+    
+  .row{
+      flex-direction: column;
+  }
+
 }

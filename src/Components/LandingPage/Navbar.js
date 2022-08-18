@@ -276,7 +276,18 @@ const Navbar = () => {
                 <span>
                   <IoBeerOutline />
                 </span>
-                <a href="/#Reservation" className={`${S.navlink}`}>
+                <a href="/#Reservation" className={`${S.navlink}`}
+                
+                onClick={()=>{
+                  if(showHam) toggleHam()
+                  else return
+                }}
+
+                style={
+                  isActiveUrl("/#Reservation")
+                }
+
+                >
                   RESERVATION
                 </a>
               </li>

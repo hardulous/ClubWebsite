@@ -54,17 +54,22 @@
 .upperForm form{
     display: flex;
     justify-content: space-evenly;
-    width: 85%;
+    width: 100%;
 }
 
 .input{
     position: relative;
-    width: 20.2%;
+    width: 17%;
 }
 
 .input a{
+  pointer-events: none;
   width: 100%;
   height: 100%;
+}
+
+.input select{
+    cursor: pointer;
 }
 
 .input input,select,button{
@@ -136,6 +141,10 @@
     .input{
         width: 42%;
         margin: 0.4rem;
+    }
+
+    .upperForm form .input:last-child{
+        width: 90%;
     }
 }
 

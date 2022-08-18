@@ -13,8 +13,6 @@ const AboutUsPage = () => {
   
     const cardObserver = new IntersectionObserver((entries) => {
         
-        console.log(entries)
-
         entries.forEach((entry) => {
           
           entry.target.classList.toggle(`${S2.appear}`, entry.isIntersecting);
@@ -26,7 +24,7 @@ const AboutUsPage = () => {
       },
       {
         threshold:0,
-        rootMargin:"0px 0px -350px 0px"
+        rootMargin:"0px 0px -300px 0px"
       }
     );
 

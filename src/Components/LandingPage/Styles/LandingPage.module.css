@@ -1,6 +1,6 @@
 @font-face {
-    src: url(../../../Fonts/Amithen.otf);
-    font-family:'Amithen' 
+    src: url(../../../Fonts/Hallies.otf);
+    font-family:'Hallies' 
 }
 @font-face {
     src: url(../../../Fonts/DIN-Bold.ttf);
@@ -12,7 +12,7 @@
     padding: 0;
     box-sizing: border-box;
     height: calc( 110vh - 116px );
-    background:linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.521),rgba(0, 0, 0, 0.24)) , url(../../../images/areial-view.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.24)) , url(../../../images/areial-view.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -79,7 +79,7 @@
     font-size: 7rem;
     top: 50%;
     color: white;
-    font-family: 'Amithen';
+    font-family: 'Hallies';
     left: 91%;
     color: rgb(241, 199, 97);
     opacity: 0;
@@ -87,7 +87,6 @@
     animation-fill-mode: forwards;
     animation-delay: 2s;
     z-index:1
-    
 }
 
 @keyframes hunterText {
@@ -207,8 +206,13 @@
 .homeText h1{
     color: #F1C760;
     font-size: 7rem;
-    font-weight: bolder;
-    font-family: 'Amithen';
+    font-family: 'Hallies';
+    background-color: transparent;
+    transition: background-color 200ms ease;
+}
+
+.homeText h1:hover{
+   background-color:#00000069 ;
 }
 
 .homeText p{

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import S from "./Styles/HeaderBody.module.css";
+import S from "./Styles/LandingPage.module.css";
 import St from "./Styles/Body.module.css";
 import Ss from "./Styles/BodyTwo.module.css";
 import Sst from "./Styles/Reservation.module.css";
@@ -113,7 +113,7 @@ const HeaderBody = () => {
             <div className={`${S.containerSmall}`}>
               <div>
                 <div className={`${S.homeText}`}>
-                  <h1>King's Restaurant and bar</h1>
+                  <h1>King's Restaurant and Bar</h1>
                   <p className="animateText">
                     <span>Welcome</span>
                     <span>Best club in gurugram</span>

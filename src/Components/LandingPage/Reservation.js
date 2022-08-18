@@ -8,6 +8,7 @@ import club from '../../images/club-imageOne.png'
 // react datapicker
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import ResModal from "../Modal/ResModal";
 
 const Reservation = () => {
   // state variable for calendar
@@ -21,8 +22,29 @@ const Reservation = () => {
   
   // `);
 
+  const [showModal, setshowModal] = useState(false);
+
+  const toggleModal = ()=>{
+
+    if(!showModal){
+      document.body.style.overflowY="hidden"
+    }
+    else{
+      document.body.style.overflowY="scroll"
+    }
+
+    setshowModal(!showModal)
+
+  }
+  
+
   return (
     <div className={`${S.resMain}`}>
+
+      {
+        showModal ? <ResModal toggleModal={toggleModal}/> : ""
+      }
+
       <div>
         <div className={`${S.upperHeader}`}>
           <h1>MAKE A RESERVATION</h1>
@@ -32,15 +54,28 @@ const Reservation = () => {
         </div>
         <div className={`${S.upperForm}`}>
           <form>
+
             <div className={`${S.input}`}>
               <a href="#" className="icon-user-plus"></a>
               <select>
-                <option value="">No of Person</option>
+                <option value="">No Of Person</option>
                 <option value="">1 Person</option>
                 <option value="">2 Persons</option>
                 <option value="">3 Persons</option>
                 <option value="">4 Persons</option>
                 <option value="">5 Persons</option>
+                <option value="">More Than 5</option>
+              </select>
+            </div>
+
+            <div className={`${S.input}`}>
+              <a href="#" className="icon-food_bank"></a>
+              <select>
+                <option value="">Select The Table</option>
+                <option value="">Vip</option>
+                <option value="">Deluxe-Vip</option>
+                <option value="">Premium-Vip</option>
+                <option value="">Dome-Vip</option>
               </select>
             </div>
 
@@ -76,7 +111,12 @@ const Reservation = () => {
             </div>
 
             <div className={`${S.input}`}>
-              <button type="submit">Find A Tabel</button>
+              <button type="submit" onClick={(e)=>{
+
+                e.preventDefault();
+                toggleModal();
+                
+              }}>Find A Tabel</button>
             </div>
           </form>
         </div>

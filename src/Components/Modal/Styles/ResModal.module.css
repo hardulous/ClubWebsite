@@ -12,23 +12,6 @@
     animation-fill-mode: forwards;
 }
 
-.modal{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    border: 1px solid #8080805c;
-    background-color: white;
-    position: relative;
-    animation: modal 300ms 1 ease;
-    animation-fill-mode: forwards;
-}
-
-.modalCloseBtn{
-    position: absolute;
-    right: 0px;
-    cursor: pointer;
-}
-
 @keyframes modalBackground {
     
     50%{
@@ -36,21 +19,5 @@
     }
     100%{
         background: #111111ee;
-    }
-}
-
-@keyframes modal {
-
-    0%{ 
-        opacity: 0.3;
-        transform: translateY(-46px);
-    }
-    50%{
-        opacity: 0.6;
-        transform: translateY(-18px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
     }
 }

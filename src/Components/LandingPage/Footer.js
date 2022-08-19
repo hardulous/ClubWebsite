@@ -17,8 +17,8 @@ const Footer = () => {
 
     <div className={`${S.footerMain}`}>
         <div className={`${S.card1}`}>
-          <p>Open At : 12:00 AM To 8:00 AM</p>
-          <a href="support@kingrestaurantandbar.com" className='icon-envelop'>support@kingrestaurantandbar.com</a>
+          <p>Open At : 12:00 PM To 8:00 AM</p>
+          <a href="mailto:support@kingrestaurantandbar.com" className='icon-envelop'>support@kingrestaurantandbar.com</a>
         </div>
         <div className={`${S.card2}`}>
           <img src={logo} alt="" />

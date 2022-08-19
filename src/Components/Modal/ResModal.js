@@ -1,28 +1,39 @@
 import React from 'react'
+import { useEffect } from 'react'
+import { useState } from 'react'
+import Spinner from '../Spinner/Spinner'
+import Form from './Form'
 import S from "./Styles/ResModal.module.css"
 
 const ResModal = ({toggleModal}) => {
+  
+  const [Loading, setLoading] = useState(true)
+ 
+  useEffect(()=>{
+
+    setTimeout(()=>{
+       setLoading(!Loading)
+    },3000)
+
+  },[])
 
   return (
 
-    <div className={`${S.modalBackground}`} onClick={toggleModal}>
-      
-    <div className={`${S.modal}`} onClick={(e)=>{
-      e.stopPropagation();
-    }}>
+    <div className={`${S.modalBackground}`} onClick={()=>{
+       
+      if(!Loading) toggleModal()
+      else return 
 
-      <div className={S.modalCloseBtn} onClick={toggleModal}>X</div>
-      <div className={`${S.modalHeader}`}>
-        <h2>My Modal</h2>
-      </div>
-      <div className={`${S.modalBody}`}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam asperiores, impedit esse in accusantium dolor ipsa eligendi voluptatibus animi suscipit doloremque mollitia omnis nam incidunt tempore eveniet eos autem architecto.
-      </div>
-      <div className={`${S.modalFooter}`}>
-        <button>Cancel</button>
-        <button>Submit</button>
-      </div>
-    </div>
+    }}>
+      
+    {
+
+      !Loading ?  
+      
+      <Form toggleModal={toggleModal}/>  :
+      
+      <Spinner/>
+    }
 
   </div>
 

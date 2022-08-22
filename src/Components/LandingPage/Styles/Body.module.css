@@ -43,7 +43,7 @@
 }
 
 .bodyOneText p{
-    width: 60%;
+    width: 80%;
     text-align: center;
     color: #746969;
     font-family: 'DIN-LIGHT';
@@ -57,7 +57,7 @@
         font-size: 2.2rem;
     }
     .bodyOneText p{
-        width: 75%;
+        width: 90%;
     }
 
 }
@@ -69,7 +69,7 @@
         font-size: 1.8rem;
     }
     .bodyOneText p{
-        width: 80%;
+        width: 93%;
     }
 
 }
@@ -81,7 +81,7 @@
         font-size: 1.6rem;
     }
     .bodyOneText p{
-        width: 90%;
+        width: 95%;
     }
 
 }

@@ -1,37 +1,58 @@
 import React from "react";
-import S from "./Styles/Form.module.css"
+import S from "./Styles/Form.module.css";
+import "../../icomon/style.css"
 
-const Form = ({toggleModal}) => {
+const Form = ({ toggleModal }) => {
 
   return (
 
-    <div className={`${S.modal}`} onClick={(e) => {
-        e.stopPropagation();
-      }}
-    >
+    <div className={`${S.modal} ${S.modalForm}`} onClick={(e)=>{
+      e.stopPropagation();
+    }}>
 
-      <div className={S.modalCloseBtn} onClick={toggleModal}>
-        X
+      <div className={`${S.modalCloseBtn}`} onClick={toggleModal}>
+        <span>|</span>
+        <span>|</span>
       </div>
 
-      <div className={`${S.modalHeader}`}>
-        <h2>My Modal</h2>
-      </div>
+      <h1>CREDENTIALS</h1>
+      <hr />
 
-      <div className={`${S.modalBody}`}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-        asperiores, impedit esse in accusantium dolor ipsa eligendi voluptatibus
-        animi suscipit doloremque mollitia omnis nam incidunt tempore eveniet
-        eos autem architecto.
-      </div>
+      <form>
+        <div className={`${S.inputBox} icon-form-user`}>
+          <input type="text" placeholder="Your Name" />
+        </div>
 
-      <div className={`${S.modalFooter}`}>
-        <button>Cancel</button>
-        <button>Submit</button>
-      </div>
+        <div className={`${S.inputBox} icon-form-envelop`}>
+          <input type="gmail" placeholder="Your Gmail" />
+        </div>
 
+        <div className={`${S.inputBox} icon-form-phone`}>
+          <input type="number" placeholder="Your Phone Number"
+          />
+        </div>
+
+        <div className={`${S.inputBox} icon-form-credit-card`}>
+          <select>
+            <option value="#">Payment Option</option>
+            <option value="upi">UPI</option>
+            <option value="debit-card">DEBIT CARD</option>
+            <option value="credit-card">CREDIR CARD</option>
+          </select>
+        </div>
+
+        <button type="submit" className={`${S.inputBox}`} onClick={(e)=>{
+          e.preventDefault();
+        }}>
+          Proceed To Pay
+        </button>
+      </form>
     </div>
   );
 };
 
 export default Form;
+
+// {`${S.modal}`} onClick={(e) => {
+//   e.stopPropagation();
+// }}

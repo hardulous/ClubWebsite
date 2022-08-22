@@ -2,7 +2,6 @@
 .loader{
     height: 100px;
     width: 100px;
-    border-radius: 50%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -11,8 +10,8 @@
 
 .dots{
     position: absolute;
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
     background-color: #F1C761;
     transform: rotate(calc(36deg*var(--i)));

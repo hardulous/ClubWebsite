@@ -51,7 +51,7 @@ const Body = () => {
         </div>
 
         <div className={`${St.bodyOneText} ${St.fadeIn}`}>
-          <p>Tranform your mediocre day into luxurious and exciting experience at the king's restaurant and bar located in the hear of the millennium city - gurgaon.<br /><br />King's is all about serving for all tastes and all occasions.So whether you are catching up with your friends, family, or date, or want to have a corporate event, we aim to harbour you for any situation.Your guests will be thrilled as you bring your event to reality.<br /><br />
+          <p>Tranform your mediocre day into a luxurious and exciting experience at the king's restaurant and bar located in the hear of the millennium city - gurgaon.King's is all about serving for all tastes and all occasions.So whether you are catching up with your friends, family, or date, or want to have a corporate event, we aim to harbour you for any situation.Your guests will be thrilled as you bring your event to reality.Here is an elegant and stylish bar with a live band to make your event delightful.Our bartender presents to you an extensive list of refreshing mocktails and liquors.The bar's luxurious ambiance and comfortable seating provide guests with just the surroundings to appreciate the finer details- the live band, list of fresh beverages, extensive drinks, and liquors.<br /><br />
           </p>
         </div>
 

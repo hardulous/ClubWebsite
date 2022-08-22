@@ -1,9 +1,9 @@
-import shivam from "../../images/mangur.jpg"
-import garima from "../../images/garima.jpg.jpeg"
-import ankit from "../../images/ankit.jpg"
-import jasika from "../../images/jasika.jpg"
-import aman from "../../images/aman.jpg"
 import akshat from "../../images/akshat.PNG"
+import aman from "../../images/Testimonial/Mangur.png"
+import shivam from "../../images/Testimonial/Shivam.png"
+import sanjay from "../../images/Testimonial/Sanjay.png"
+import garima from "../../images/Testimonial/GARIMA.png"
+import jasika from "../../images/Testimonial/Jasika.png"
 
 export const TestimonialCardData = [
 
@@ -16,8 +16,8 @@ export const TestimonialCardData = [
     },
     {
         id:2,
-        name:"Ankit Chauhan",
-        img:ankit,
+        name:"Sanjay Rathi",
+        img:sanjay,
         message:"This place is great! The atmosphere is chill and cool. The staff is also friendly. Food and drinks are pretty good too. their price is also affordable. but i would recommend working a little bit on their restaurant's aesthetics. but in all, a nice place to go and have fun",
         dsg:"Developer"
     },

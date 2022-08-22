@@ -81,7 +81,7 @@
 }
 
 .cardImage img{
-    width: 86%;
+    width: 97%;
     height: 104%;
     object-fit: cover;
 }
@@ -92,7 +92,7 @@
 }
 
 .imgdesc{
-    margin-top: 1rem;
+    margin-top: 1.6rem;
     text-align: center;
 }
 

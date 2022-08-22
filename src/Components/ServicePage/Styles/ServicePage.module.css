@@ -1,0 +1,44 @@
+@font-face {
+    font-family:'DIN-BOLD';
+    src: url(../../../Fonts/DIN-Bold.ttf);
+}
+
+.serviceHeader{
+    height: 85vh;
+    background: url(../../../images/Services\ banner\ image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.serviceHeader h1{
+    font-family: 'DIN-BOLD';
+    font-size: 4rem;
+    color: #ffffff;
+    transform: translateY(300px);
+    opacity: 0;
+    transition-property: transform opacity;
+    transition-duration: 1400ms;
+    transition-delay: 1s;
+}
+
+.serviceHeader h1.fadeIn{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.serviceBody{
+    background-color: #EFEDE8;
+    min-height: 400vh;
+    padding: 2rem 1rem;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}

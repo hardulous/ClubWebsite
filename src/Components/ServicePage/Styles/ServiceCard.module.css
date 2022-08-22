@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'DIN-BOLD';
+    src: url(../../../Fonts/DIN-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'DIN-LIGHT';
+    src: url(../../../Fonts/DIN-Light.ttf);
+}
+
+.imgContainer{
+    width: 40%;
+    align-self: center;
+}
+
+.imgContainer img{
+    width: 100%;
+}
+
+.cardContainer{
+   width: 50%;
+   margin: 4rem 0rem 2rem 0rem;
+}
+
+.cardContainer h4{
+    font-family: 'DIN-BOLD';
+    font-size: 3rem;
+}
+
+.cardContainer p{
+    font-family: 'DIN-LIGHT';
+    font-weight: bolder;
+    padding: 2rem 0rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.newLine {
+    white-space: pre-line;
+}

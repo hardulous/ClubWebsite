@@ -49,7 +49,7 @@ const Reservation = () => {
         <div className={`${S.upperHeader}`}>
           <h1>MAKE A RESERVATION</h1>
           <p>
-          We are always there to serve you as per your requirement, so get in contact with us today, and we'll take care of all the hassles in preparing for your next event
+          We are always there to serve you as per your requirement, so if you want to organize your event in gurgaon, you will be delighted with our adaptable venue spaces and creative catering options.Whether for a corporate event or personal celebration, get in contact with us today, and we'll take care of all the hassles in preparing for your next event 
           </p>
         </div>
         <div className={`${S.upperForm}`}>

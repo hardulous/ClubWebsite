@@ -6,6 +6,7 @@ import affordable from "../../images/AFFORDABILITY.png"
 import vision from "../../images/OUR VISION.png"
 import value from "../../images/OUR VALUES.png"
 import nature from "../../images/CONTRIBUTING.png"
+import Ambience from "../../images/Ambience.png"
 
 export const AboutCardData = [
 
@@ -18,6 +19,11 @@ export const AboutCardData = [
         img:why,
         heading:"WHY CHOOSE US?",
         description:"What comes to our minds while preparing for a date,throwing a corporate party,or having a college reunion with old friends? if your answer is a perfect experience. Then this is the right place for you. At king's bar and restaurant, we give you the best ambiance for all your formal and informal get-together. Our team, under the guidance of our founder especially designed and crafted everything from lighting to flooring/roofing, from theme to seating, and everything to provide you a never-ending experience of dusk till dawn."
+    },
+    { 
+        img:Ambience,
+        heading:"AMBIENCE",
+        description:"What catches your eye when you are at a restaurant or bar? What makes your vibe? What makes a date memorable? You all would agree that it is the ambiance of the place. The perfect interior of a spot can light your mood, make your date say yes aloud, and help your business crack big offers. At King's bar and restaurant, we give you the best ambiance for all your formal and informal get-togethers. Our team, under the guidance of our founder especially designed and crafted everything from lighting to flooring/roofing, from theme to seating, each and everything to provide you a never-ending experience of dusk till dawn."
     },
     {
         img:chef,

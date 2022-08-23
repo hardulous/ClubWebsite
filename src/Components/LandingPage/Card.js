@@ -12,7 +12,7 @@ const Card = ( props ) => {
 
     <div className={`${S.card}`} onClick={()=>{
       
-      navigate("/services")
+      navigate("/service")
 
     }}>
 

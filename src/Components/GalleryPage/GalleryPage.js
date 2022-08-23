@@ -1,9 +1,15 @@
 import React from 'react'
 
 const GalleryPage = () => {
+
   return (
-    <div>GalleryPage</div>
+
+    <div>
+      
+    </div>
+
   )
+
 }
 
 export default GalleryPage

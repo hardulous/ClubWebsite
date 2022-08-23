@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import S from "./Styles/ServicePage.module.css";
+import S2 from "./Styles/ServiceCard.module.css"
 import {ServiceData} from "../Data/ServiceData.js"
 import ServiceCard from "./ServiceCard";
 
@@ -9,6 +10,31 @@ const ServicePage = () => {
   useEffect(() => {
 
     document.querySelector(`.${S.serviceHeader} h1`).classList.add(`${S.fadeIn}`);
+
+    const cardObserver = new IntersectionObserver((entries) => {
+        
+      entries.forEach((entry) => {
+        
+        entry.target.classList.toggle(`${S2.appear}`, entry.isIntersecting);
+
+        if (entry.isIntersecting) {
+          cardObserver.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold:0,
+      rootMargin:"0px 0px -300px 0px"
+    }
+  );
+
+  const Cards = document.querySelectorAll(`.${S.row}>div`);
+  
+  Cards.forEach((card)=>{
+
+    cardObserver.observe(card);  
+
+  })
 
   }, []);
 

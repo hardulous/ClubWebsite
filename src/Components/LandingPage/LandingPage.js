@@ -17,6 +17,26 @@ const HeaderBody = () => {
 
     if (showBeer) {
 
+    const container = document.querySelector(`.${S.container}`)
+    let index =0;
+    const ImageArray = new Array(
+      "../../images/3.jpg",
+      "../../images/5.jpg",
+      "../../images/6.jpg",
+      "../../images/8.jpg"
+    )
+
+    function slider(){
+      
+      if(index>ImageArray.length-1){
+         index=0;
+      }
+      container.style.background = `url(${ImageArray[index]});`
+      index++;
+      setTimeout(slider,3000);
+
+    }
+
     var stopTimeOut=setTimeout(() => {
 
         document.querySelector(`.${S.beer}`).classList.add(`${S.active}`);
@@ -28,6 +48,12 @@ const HeaderBody = () => {
         }, 2000);
 
       }, 10000);
+
+    var stopBackground = setTimeout(()=>{
+        
+        slider();
+
+    },0)
 
     } 
     else {

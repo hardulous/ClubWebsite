@@ -4,13 +4,16 @@ import St from "./Styles/ResCard.module.css";
 import "./Styles/Reservation2.css";
 import "../../icomon/style.css";
 import club from '../../images/club-imageOne.png'
-
+import {useNavigate} from "react-router-dom"
 // react datapicker
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import ResModal from "../Modal/ResModal";
 
 const Reservation = () => {
+
+  const navigate = useNavigate()
+
   // state variable for calendar
   const [selectedDay, setSelectedDay] = useState(new Date());
 
@@ -133,7 +136,11 @@ const Reservation = () => {
                 <p>Every Monday, Tuesday and Wednesday evening, we’re offering groups of 10 or more that book a table in our bar a complimentary serving of beer</p>
               </div>
               <div className={`${St.button}`}>
-                <button type="submit">READ MORE</button>
+                <button type="submit" onClick={()=>{
+                  
+                  navigate("/about")
+
+                }}>READ MORE</button>
               </div>
             </div>
 
@@ -146,7 +153,11 @@ const Reservation = () => {
                 <img src={club} alt="club.png" />
               </div>
               <div className={`${St.imgdesc}`}>
-                <button>VIEW MORE</button>
+                <button onClick={()=>{
+
+                  navigate("/gallery")
+
+                }}>VIEW MORE</button>
               </div>
             </div>
 

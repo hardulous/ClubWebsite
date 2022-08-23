@@ -123,6 +123,8 @@
 }
 
 .modalForm button {
+  font-family: 'DIN-LIGHT';
+  font-weight: bolder;
   background-color: #F1C761;
   color: #1E1E1E;
   padding: 0.7rem 0rem 0.7rem 0rem;
@@ -130,7 +132,7 @@
   z-index: 1;
 }
 
-.modalForm button::before{
+.modalForm button::after{
   content: '';
   width: 0%;
   height: 100%;
@@ -141,7 +143,7 @@
   transition: width 0.3s ease;
 }
 
-.modalForm button:hover::before{
+.modalForm button:hover::after{
   width: 100%;
   z-index: -1;
 }

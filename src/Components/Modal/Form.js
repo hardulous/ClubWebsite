@@ -41,7 +41,7 @@ const Form = ({ toggleModal }) => {
           </select>
         </div>
 
-        <button type="submit" className={`${S.inputBox}`} onClick={(e)=>{
+        <button type="submit" className={`${S.inputBox} icon-form-banknote`} onClick={(e)=>{
           e.preventDefault();
         }}>
           Proceed To Pay

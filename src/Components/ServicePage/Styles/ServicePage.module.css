@@ -33,12 +33,59 @@
 
 .serviceBody{
     background-color: #EFEDE8;
-    min-height: 400vh;
+    min-height: 100vh;
     padding: 2rem 1rem;
 }
 
 .row{
     display: flex;
     justify-content: space-around;
-    margin-top: 1rem;
+    margin-top: 1.4rem;
+    align-items: center;
 }
+
+/* Css for changing image width in each row */
+.serviceBody .row:nth-child(2) div:nth-child(2){
+    width: 33%;
+}
+.serviceBody .row:nth-child(3) div:nth-child(2){
+    width: 24%;
+}
+.serviceBody .row:nth-child(4) div:nth-child(2){
+    width: 30%;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width:950px) {
+    
+    .serviceBody .row:nth-child(2) div:nth-child(2){
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:711px){
+
+    .serviceBody .row:nth-child(2) div:nth-child(2){
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width:574px) {
+    
+    .row{
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    
+    .serviceBody .row:nth-child(2) div:nth-child(2){
+        width: 70%;
+    }
+    .serviceBody .row:nth-child(3) div:nth-child(2){
+        width: 70%;
+    }
+    .serviceBody .row:nth-child(4) div:nth-child(2){
+        width: 70%;
+        margin-top: 0rem;
+    }
+}    

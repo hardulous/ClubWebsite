@@ -51,3 +51,55 @@
   }
 
 }
+
+@media screen and (max-width:912px){
+   
+  .aboutHeaderContainer{
+     height: 70vh;
+  }
+
+  .aboutHeaderContainer h1{
+    font-size: 6rem;
+  }
+
+}
+
+@media screen and (max-width:820px){
+   
+  .aboutHeaderContainer h1{
+    font-size: 6rem;
+  }
+
+}
+
+@media screen and (max-width:540px){
+   
+  .aboutHeaderContainer{
+     height: 65vh;
+  }
+
+  .aboutHeaderContainer h1{
+    font-size: 3.5rem;
+  }
+
+}
+
+@media screen and (max-width:414px){
+   
+  .aboutHeaderContainer{
+     height: 65vh;
+  }
+
+  .aboutHeaderContainer h1{
+    font-size: 3.6rem;
+  }
+
+}
+
+@media screen and (max-width:280px){
+   
+  .aboutHeaderContainer h1{
+    font-size: 3rem;
+  }
+
+}

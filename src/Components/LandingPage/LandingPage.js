@@ -17,17 +17,17 @@ const HeaderBody = () => {
 
     if (showBeer) {
 
-    // var stopTimeOut=setTimeout(() => {
+    var stopTimeOut=setTimeout(() => {
 
-    //     document.querySelector(`.${S.beer}`).classList.add(`${S.active}`);
+        document.querySelector(`.${S.beer}`).classList.add(`${S.active}`);
 
-    //     setTimeout(() => {
+        setTimeout(() => {
 
-    //       setshowBeer(!showBeer);
+          setshowBeer(!showBeer);
 
-    //     }, 2000);
+        }, 2000);
 
-    //   }, 10000);
+      }, 10000);
 
     } 
     else {

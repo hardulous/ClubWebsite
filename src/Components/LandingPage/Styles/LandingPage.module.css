@@ -212,7 +212,7 @@
 
 .homeText h1{
     color: #F1C760;
-    font-size: 7rem;
+    font-size: 6rem;
     font-family: 'Hallies';
     background-color: transparent;
     transition: background-color 200ms ease;
@@ -229,7 +229,7 @@
 }
 
 .homeText p span{
-    font-size: 4rem;
+    font-size: 3rem;
     color: #ffffff;
     font-weight: bolder;
     display: inline-block;
@@ -307,6 +307,18 @@
         font-size: 5.4rem;
         top: 55%;
     }
+
+    .homeText h1{
+        font-size: 6rem;
+    }
+  
+    .homeText p span{
+        font-size: 4.5rem;
+    }
+
+    .homeText p{
+        padding: 2rem 0rem;
+    }
  
 }
 
@@ -350,6 +362,18 @@
     .hunterText{
         font-size: 4.6rem;
         top: 60%;
+    }
+
+    .homeText h1{
+        font-size: 5.2rem;
+    }
+  
+    .homeText p span{
+        font-size: 4.2rem;
+    }
+
+    .homeText p{
+        padding: 1rem 0rem;
     }
  
 }
@@ -439,6 +463,18 @@
         font-size: 3rem;
         top: 60%;
     }
+
+    .homeText h1{
+        font-size: 3.3rem;
+    }
+  
+    .homeText p span{
+        font-size: 2rem;
+    }
+
+    .homeText p{
+        padding: 0.7rem 0rem;
+    }
  
 }
 
@@ -458,30 +494,42 @@
     }
  
     .beerText:nth-of-type(1){
-        left: -111%;
+        left: -107%;
     }
     .beerText:nth-of-type(2){
-        left: -73%;
+        left: -70%;
     }
     .beerText:nth-of-type(3){
-        left: -58%;
+        left: -55%;
     }
     .beerText:nth-of-type(4){
-       left: -19%;
+       left: -16%;
     }
     .beerText:nth-of-type(5){
-       left: 86%;
+       left: 91%;
     }
     .beerText:nth-of-type(6){
-       left: 123%;
+       left: 128%;
     }
     .beerText:nth-of-type(7){
-       left: 159%;
+       left: 165%;
     }
  
     .hunterText{
         font-size: 2.5rem;
         top: 57%;
+    }
+
+    .homeText h1{
+        font-size: 2.5rem;
+    }
+  
+    .homeText p span{
+        font-size: 1.5rem;
+    }
+
+    .homeText p{
+        padding: 0.7rem 0rem;
     }
  
  }
@@ -527,13 +575,21 @@
      font-size: 2.2rem;
      top: 59%;
     }
+
+    .homeText h1{
+      font-size: 2.4rem;
+    }
+
+    .homeText p span{
+      font-size: 2rem;
+    }
  
 }
 
 @media screen and (max-width:360px) {
     
     .container{
-     height: calc( 89vh - 116px );
+     height: calc( 65vh - 116px );
     }
     
     .beer{
@@ -541,35 +597,43 @@
     }
  
     .beerText{
-     font-size: 4rem;
+     font-size: 3rem;
      top: 30%;
     }
  
     .beerText:nth-of-type(1){
-       left: -95%;
+       left: -104%;
     }
     .beerText:nth-of-type(2){
-       left: -62%;
+       left: -66%;
     }
     .beerText:nth-of-type(3){
-       left: -48%;
+       left: -51%;
     }
     .beerText:nth-of-type(4){
-       left: -14%;
+       left: -12%;
     }
     .beerText:nth-of-type(5){
-       left: 88%;
+       left: 90%;
     }
     .beerText:nth-of-type(6){
-       left: 121%;
+       left: 125%;
     }
     .beerText:nth-of-type(7){
-       left: 153%;
+       left: 160%;
     }
  
     .hunterText{
-       font-size: 2rem;
-       top: 58%;
+       font-size: 1.8rem;
+       top: 60%;
+    }
+
+    .homeText h1{
+      font-size: 2.3rem;
+    }
+  
+    .homeText p span{
+      font-size: 1.5rem;
     }
  
 }
@@ -615,6 +679,18 @@
     .hunterText{
         font-size: 1.5rem;
         top: 62%;
+    }
+
+    .homeText h1{
+        font-size: 2rem;
+    }
+  
+    .homeText p span{
+        font-size: 1.2rem;
+    }
+
+    .homeText p{
+        padding: 0rem 0rem;
     }
  
 }

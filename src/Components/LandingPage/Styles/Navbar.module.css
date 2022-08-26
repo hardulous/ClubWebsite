@@ -482,3 +482,11 @@
     }
     
 }
+
+@media screen and (max-width:820px) {
+    
+    .tracker{
+       display: none;
+    }
+
+}

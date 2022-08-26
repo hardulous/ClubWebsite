@@ -17,43 +17,17 @@ const HeaderBody = () => {
 
     if (showBeer) {
 
-    const container = document.querySelector(`.${S.container}`)
-    let index =0;
-    const ImageArray = new Array(
-      "../../images/3.jpg",
-      "../../images/5.jpg",
-      "../../images/6.jpg",
-      "../../images/8.jpg"
-    )
+    // var stopTimeOut=setTimeout(() => {
 
-    function slider(){
-      
-      if(index>ImageArray.length-1){
-         index=0;
-      }
-      container.style.background = `url(${ImageArray[index]});`
-      index++;
-      setTimeout(slider,3000);
+    //     document.querySelector(`.${S.beer}`).classList.add(`${S.active}`);
 
-    }
+    //     setTimeout(() => {
 
-    var stopTimeOut=setTimeout(() => {
+    //       setshowBeer(!showBeer);
 
-        document.querySelector(`.${S.beer}`).classList.add(`${S.active}`);
+    //     }, 2000);
 
-        setTimeout(() => {
-
-          setshowBeer(!showBeer);
-
-        }, 2000);
-
-      }, 10000);
-
-    var stopBackground = setTimeout(()=>{
-        
-        slider();
-
-    },0)
+    //   }, 10000);
 
     } 
     else {
@@ -73,7 +47,7 @@ const HeaderBody = () => {
     }
 
     return ()=>{
-      clearTimeout(stopTimeOut);
+      // clearTimeout(stopTimeOut);
     }
 
   }, [showBeer]);

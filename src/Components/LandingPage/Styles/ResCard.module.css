@@ -109,22 +109,30 @@
     }
 
     .imgdesc button,.button button{
-        width: 54%;
+        width: 60%;
     }
 
 }
 
 @media screen and (max-width:963px) {
     
+    .cardHeader{
+       padding: 1rem 2rem;
+    }
+
     .cardHeader h1{
-        font-size: 1.2rem;
-        letter-spacing: 0px;
-        word-spacing: 0px;
+        font-size: 1.5rem;
+        letter-spacing: normal;
+        word-spacing: normal;
+        line-height: normal;
     }
     .cardHeader p{
         font-size: 0.9rem;
-        line-height: 27px;
-        width: 114%;
+        width: 100%;
+        line-height: normal;
+    }
+    .cardImage{
+        height: auto;
     }
 }
 
@@ -142,26 +150,20 @@
     }
 }
 
-@media screen and (max-width:519px) {
+@media screen and (max-width:550px) {
     
-    .cardHeader h1{
-        font-size: 2.4rem;
+    .cardHeader{
+        padding: 1rem 0rem;
     }
-    .cardHeader p{
-        font-size: 1rem;
-    }
-
-}
-
-@media screen and (max-width:519px) {
-    
     .cardHeader h1{
         font-size: 2rem;
     }
     .cardHeader p{
-        font-size: 0.8rem;
+        width: 100%;
+        text-align: justify;
+        line-height: initial;
+        font-size: 1rem;
     }
-
 }
 
 @media screen and (max-width:368px) {

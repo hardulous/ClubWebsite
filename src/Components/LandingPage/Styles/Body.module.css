@@ -70,6 +70,7 @@
     }
     .bodyOneText p{
         width: 93%;
+        text-align: justify;
     }
 
 }

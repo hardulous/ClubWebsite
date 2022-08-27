@@ -89,3 +89,10 @@
     transform: skewX(-12deg) skewY(-7deg);
     font-family: 'HunterRiver';
 }
+
+@media screen and (max-width:912px) {
+    
+    .cardDesc p{
+        text-align: justify;
+    }
+}

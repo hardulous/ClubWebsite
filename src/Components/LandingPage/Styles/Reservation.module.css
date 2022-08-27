@@ -8,7 +8,7 @@
 }
 
 .ReservationContainer{
-    min-height: 120vh;
+    min-height: 50vh;
     background-color: #EFEDE8;
     padding: 3rem 1rem 1rem 1rem;
 }
@@ -28,12 +28,13 @@
 }
 
 .upperHeader p{
-    width: 70%;
+    width: 80%;
     font-family: 'DIN-LIGHT';
     color: #746969;
     text-align: center;
     font-weight: bolder;
-    margin-top: 1.5rem;
+    margin: 1rem 0rem;
+    font-size: 1rem;
 }
 
 .upperHeader h1{
@@ -149,6 +150,43 @@
     }
 }
 
+@media screen and (max-width:1111px) {
+    
+    .colCard:nth-of-type(1){
+         width: 36%;
+    }
+    .colCard:nth-of-type(2){
+        width: 58%;
+    }
+}
+
+@media screen and (max-width:950px) {
+    
+    .upperHeader p{
+        text-align: justify;
+    }
+    .colCard:nth-of-type(1){
+        padding: 1rem 0rem 1rem 0rem !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .colCard:nth-of-type(2){
+        padding: 1rem 0rem 1rem 0rem !important;
+    }
+}
+
+@media screen and (max-width:791px) {
+    
+   .colCard:nth-of-type(1){
+        width: 100%;
+   }
+   .colCard:nth-of-type(2){
+       width: 100%;
+       margin-top: 1rem;
+   }
+}
+
 @media screen and (max-width:724px) {
     
     .upperForm form{
@@ -166,7 +204,7 @@
 }
 
 .colCard{
-    padding: 1rem 1rem 3rem 1rem;
+    padding: 1rem 1rem 2rem 1rem;
     background-color: #E4DFD9;
     width: 45%;
 }
@@ -175,23 +213,47 @@
     padding: 4rem 1rem 3rem 1rem;
 }
 
-@media screen and (max-width:1111px) {
+@media screen and (max-width:550px) {
     
+    .upperHeader h1{
+       font-size: 2rem;
+    }
+
+    .upperHeader p{
+        width: 90%;
+        text-align: justify;
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+
     .colCard:nth-of-type(1){
-         width: 36%;
+        padding: 2rem 2rem !important;
     }
     .colCard:nth-of-type(2){
-        width: 58%;
+        padding: 1rem 0rem 2rem 0rem !important;
     }
+
 }
 
-@media screen and (max-width:791px) {
+@media screen and (max-width:414px) {
     
-   .colCard:nth-of-type(1){
-        width: 100%;
-   }
-   .colCard:nth-of-type(2){
-       width: 100%;
-       margin-top: 1rem;
-   }
+    .upperHeader h1{
+       font-size: 1.7rem;
+    }
+
+    .upperHeader p{
+        width: 90%;
+        text-align: justify;
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (max-width:300px) {
+    
+    .colCard:nth-of-type(1){
+        padding: 1rem !important;
+    }
+
 }

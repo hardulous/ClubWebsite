@@ -62,7 +62,7 @@ const Body = () => {
           {
             CardData.map((card,i)=>{
 
-              return  <div className={`col-12 col-sm-6 col-md-3 mb-3 ${St.slideIn}`} key={i}>
+              return  <div className={`col-12 col-sm-6 col-lg-3 mb-3 ${St.slideIn}`} key={i}>
               <Card card={card}/>
             </div>
 

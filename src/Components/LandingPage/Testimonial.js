@@ -18,7 +18,7 @@ const Testimonial = () => {
     speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplaySpeed: 4000
+    autoplaySpeed: 2000,
 
   };
 

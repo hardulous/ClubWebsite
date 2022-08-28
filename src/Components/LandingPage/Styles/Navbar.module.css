@@ -64,7 +64,7 @@
 
 .navitem{
     list-style: none;
-    padding: 12px;
+    padding: 1rem 0rem;
     font-weight: 900;
 }
 
@@ -227,9 +227,9 @@
 .navmenu3 li span{
     color: #F1C761;
     position: absolute;
-    left: -1.4rem;
+    left: -1.9rem;
     font-size: 2rem;
-    top: -0.3rem;
+    top: -0.1rem;
 }
 
 .navlink{
@@ -297,13 +297,13 @@
 
 .hamburger{
     position: absolute;
-    top: 50%;
-    right: 28px;
+    top: 43%;
+    right: 1%;
     display: none;
     cursor: pointer;
     flex-direction: column;
     justify-content: space-between;
-    width: 7%;
+    width: 10%;
     height: 24%;
     transform: translateY(-50%)
 }
@@ -390,7 +390,7 @@
     }
 
     .menu{
-        top: 19px;
+        top: 3%;
         background-color: #060606;
         width: 100%;
         height: 100%;
@@ -445,7 +445,7 @@
     }
 
     .navmenu1 li.active{
-        transform: translateX(45%);
+        transform: translateX(43%);
     }
 
     .navmenu2 li:nth-child(1){
@@ -483,10 +483,101 @@
     
 }
 
-@media screen and (max-width:820px) {
+@media screen and (max-width:850px) {
     
     .tracker{
        display: none;
     }
+    .navlink{
+        font-size: 2.4rem;
+    }
+    .navitem{
+        padding: 2rem 0rem;
+    }
+    .navmenu1 li:nth-child(odd){
+        transform: translateX(-12%);
+    }
+    .navmenu1 li:nth-child(even){
+        transform: translateX(300%);
+    }
+    .navmenu1 li.active{
+        transform: translateX(43%);
+    }
+    .navmenu3 li span{
+        font-size: 4rem;
+    }
+    .subMenu{
+        margin-left: 1rem;
+    }
+    .subMenu a{
+        font-size: 2rem;
+    }
+}
 
+@media screen and (max-width:600px) {
+    .navlink{
+        font-size: 1.2rem;
+    }
+    .navmenu1 li:nth-child(odd){
+        transform: translateX(-12%);
+    }
+
+    .navmenu1 li:nth-child(even){
+        transform: translateX(300%);
+    }
+    .navmenu1 li.active{
+        transform: translateX(45%);
+    }
+    .navitem{
+        padding: 1rem 0rem;
+    }
+    .navmenu3 li span{
+        font-size: 2rem;
+    }
+    .subMenu{
+        margin-left: 0.4rem;
+    }
+    .subMenu a{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    
+    .navlink{
+        font-size: 1.6rem;
+    }
+    .navmenu1 li:nth-child(odd){
+        transform: translateX(-12%);
+    }
+
+    .navmenu1 li:nth-child(even){
+        transform: translateX(300%);
+    }
+    .navmenu1 li.active{
+        transform: translateX(40%);
+    }
+}
+
+@media screen and (max-width:400px) {
+    
+    .navlink{
+        font-size: 1.1rem;
+    }
+    .navmenu1 li:nth-child(odd){
+        transform: translateX(-12%);
+    }
+
+    .navmenu1 li:nth-child(even){
+        transform: translateX(300%);
+    }
+    .navmenu1 li.active{
+        transform: translateX(43%);
+    }
+    .subMenu{
+        margin-left: 0.1rem;
+    }
+    .subMenu a{
+        font-size: 0.8rem;
+    }
 }

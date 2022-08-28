@@ -9,7 +9,7 @@ const Footer = () => {
   // opening of new url in new tab
   const handleMedia = (e)=>{
      
-    window.open(e.target.id, '_blank');
+    // window.open(e.target.id, '_blank');
 
   }
 

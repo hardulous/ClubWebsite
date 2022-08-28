@@ -9,29 +9,26 @@
 }
 
 .TestimonialContainer{
-    height: 75vh;
-    padding: 1rem;
+    min-height: 30vh;
+    padding: 1rem 0rem;
     background-color: #1e1e1e;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
     gap: 1rem;
 }
 
 .TestimonialContainer h1{
-    position: absolute;
-    top: 4%;
     color: #F1C761;
     font-size: 2.3rem;
     font-family: 'DIN-BOLD';
+    margin: 0px;
 }
 
 .TestimonialMain{
     width: 70%;
-    margin-top: 3rem
 }
 
 .Testimonial{
@@ -39,6 +36,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 1rem 0rem;
 }
 
 .testimonialImg{
@@ -61,7 +59,7 @@
     margin: 0px;
     font-family: 'DIN-LIGHT';
     font-weight: bolder;
-    margin: 1rem 0rem;
+    padding: 1rem 0rem 0.4rem 0rem;
 }
 
 .testimonialText h4{
@@ -75,22 +73,50 @@
     color: #F1C761;
 }
 
+@media screen and (max-width:1300px) {
+    
+    .testimonialImg{
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+    }
+    .TestimonialMain{
+        width: 80%;
+    }
+    .testimonialText{
+        width: 83%;
+    }
+    .testimonialText p{
+        padding: 0.3rem 0rem 0.4rem 0rem;
+    }
+    .testimonialText h4{
+        padding: 0.4rem 0rem;
+    }
+
+}
+
 @media screen and (max-width:950px) {
     
     .TestimonialMain{
-        width: 90%;
+        width: 93%;
     }
     .testimonialText{
-        width: 82%;
-        margin-top: 1rem;
+        width: 87%;
+        margin-top: 0rem;
+    }
+    .testimonialText h4{
+        padding: 1rem 0rem;
     }
     .TestimonialContainer h1{
-        top: 3%;
         font-size: 2rem;
     }
-
     .TestimonialMain{
         margin-top: 1rem
+    }
+    .testimonialImg{
+        width: 172px;
+        height: 172px;
+        border-radius: 50%;
     }
 
 }
@@ -102,7 +128,6 @@
     }
 
     .TestimonialContainer h1{
-        top: 3%;
         font-size: 1.5rem;
     }
 
@@ -118,4 +143,40 @@
         margin-top: 0rem
     }
     
+}
+
+@media screen and (max-width:560px) {
+    
+    .TestimonialMain{
+        margin-top: 1rem;
+    }
+    .testimonialImg{
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+    }
+    .testimonialText{
+        width: 80%;
+        margin-top: 0.5rem;
+    }
+
+
+}
+
+@media screen and (max-width:300px){
+
+    .testimonialImg{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+    .testimonialText p{
+        font-size: 0.5rem;
+    }
+    .testimonialText h4{
+        font-size: 1rem;
+        padding: 0.4rem 0rem;
+    }
+
+
 }

@@ -1,10 +1,11 @@
 @font-face {
     src: url(../../../Fonts/DIN-Bold.ttf);
-    font-family:'DIN-BOLD';
+    font-family: 'DIN-BOLD';
 }
+
 @font-face {
     src: url(../../../Fonts/DIN-Light.ttf);
-    font-family:'DIN-LIGHT';
+    font-family: 'DIN-LIGHT';
 }
 
 @font-face {
@@ -12,23 +13,23 @@
     src: url(../../../Fonts/Hallies.ttf);
 }
 
-.FooterContainer{
-   height: 100vh;
-   color: #a3a3a3;
+.FooterContainer {
+    height: 100vh;
+    color: #a3a3a3;
 }
 
-.footerBanner{
-  width: 100%;
-  height: 45.5%;
-  background-image: url(../../../images/Footer\ banner.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  display:flex;
-  justify-content: center;
-  align-items: center;
+.footerBanner {
+    width: 100%;
+    height: 45.5%;
+    background-image: url(../../../images/Footer\ banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.footerBanner h4{
+.footerBanner h4 {
     font-size: 5rem;
     font-family: 'Hallies';
     color: #ffffff;
@@ -37,8 +38,8 @@
     word-spacing: 10px;
 }
 
-.footerMain{
-    height: calc( 100% - 45.5% ) ;
+.footerMain {
+    height: calc(100% - 45.5%);
     width: 100%;
     background-color: #1E1E1E;
     display: flex;
@@ -46,17 +47,19 @@
     align-items: center;
 }
 
-.card1,.card2,.card3{
+.card1,
+.card2,
+.card3 {
     border: 1px solid #a3a3a3;
     width: 22%;
-    height: 38%;    
+    height: 38%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;                
+    align-items: center;
 }
 
-.card2{
+.card2 {
     padding: 0px;
     display: inline-block;
     display: flex;
@@ -64,46 +67,53 @@
     justify-content: center;
 }
 
-.card2 img{
+.card2 img {
     width: 42%;
 }
 
-.card1 p{
+.card1 p {
     margin-bottom: 0.7rem;
     width: 100%;
     text-align: center;
 }
 
-.card3 a{
+.card3 a {
     margin-bottom: 0.7rem;
 }
 
-.card3 p{
+.card3 p {
     margin: 0px;
     width: 100%;
     text-align: center;
 }
 
-.card1 p,.card1 a,.card3 p,.card3 a{
+.card1 p,
+.card1 a,
+.card3 p,
+.card3 a {
     font-family: 'DIN-Light';
     font-weight: bolder;
     text-decoration: none;
     font-size: 0.8rem;
 }
 
-.card1 a, .card3 a{
+.card1 a,
+.card3 a {
     color: white;
     position: relative;
     transition: color 0.5s ease;
 }
 
-.card1 a:hover::before,.card3 a:hover::before,.card1 a:hover,.card3 a:hover{
+.card1 a:hover::before,
+.card3 a:hover::before,
+.card1 a:hover,
+.card3 a:hover {
     color: #F1C761;
 }
 
 /* Image Sprite social media */
 
-.MediaContainer{
+.MediaContainer {
     border: 1px solid #a3a3a3;
     width: 22%;
     height: 38%;
@@ -112,8 +122,8 @@
     align-items: center;
 }
 
-.MediaContainer ul{
-    list-style:none;
+.MediaContainer ul {
+    list-style: none;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -123,7 +133,7 @@
     align-items: center;
 }
 
-.MediaContainer ul li{
+.MediaContainer ul li {
     width: 68px;
     height: 67px;
     background: url(../../../images/media-icon.png);
@@ -133,81 +143,268 @@
     transition: background .4s ease;
 }
 
-.MediaContainer ul li:nth-child(1){
+.MediaContainer ul li:nth-child(1) {
     background-position: -262px -101px;
 }
 
-.MediaContainer ul li:nth-child(1):hover{
+.MediaContainer ul li:nth-child(1):hover {
     background-position: -262px -2px;
 }
 
-.MediaContainer ul li:nth-child(2){
+.MediaContainer ul li:nth-child(2) {
     background-position: -94px -101px
 }
 
-.MediaContainer ul li:nth-child(2):hover{
+.MediaContainer ul li:nth-child(2):hover {
     background-position: -94px -2px;
 }
 
-.MediaContainer ul li:nth-child(3){
+.MediaContainer ul li:nth-child(3) {
     background-position: 72px -101px;
 }
 
-.MediaContainer ul li:nth-child(3):hover{
+.MediaContainer ul li:nth-child(3):hover {
     background-position: 72px -2px;
 
 }
 
-@media screen and (max-width:984px) {
-     
-    .footerBanner h4{
-        font-size: 4rem;
-    }
-}
+@media screen and (max-width:950px) {
 
-@media screen and (max-width:899px) {
-    
-    .footerMain{
+    .footerBanner {
+        height: 26.5%;
+    }
+
+    .footerMain {
+        height: calc(100% - 26.5%);
+    }    
+
+    .footerMain {
         flex-direction: column;
-        padding: 1rem 0rem;
+        padding: 5rem 0rem;
     }
-    .card1,.card2,.card3,.MediaContainer{
+
+    .card1,
+    .card2,
+    .card3,
+    .MediaContainer {
         width: 65%;
-        height: 25%;
+        height: 34%;
     }
-    .MediaContainer{
-        width: 65%;
-        height: 38%;
+
+    .card1 p,
+    .card1 a,
+    .card3 p,
+    .card3 a{
+        font-size: 1.5rem;
     }
-    .card2{
+
+    .card2 {
         height: 39%;
     }
-    .card2 img{
-        width: 20%;
+
+    .card2 img {
+        width: 34%;
     }
-    .footerBanner h4{
+
+    .footerBanner h4 {
         font-size: 3.4rem;
     }
 
 }
 
-@media screen and (max-width:632px) {
-     .card2 img{
-        width: 31%;
-     }
-     .footerBanner h4{
-        font-size: 3rem;
+@media screen and (max-width:900px) {
+
+    .footerBanner h4 {
+        font-size: 4rem;
+    }
+    .card1 p,
+    .card1 a,
+    .card3 p,
+    .card3 a{
+        font-size: 1rem;
     }
 }
 
-@media screen and (max-width:511px) {
-    .footerBanner h4{
+@media screen and (max-width:632px) {
+    .card2 img {
+        width: 31%;
+    }
+
+    .footerBanner h4 {
+        font-size: 3rem;
+    }
+    .footerMain {
+      flex-direction: column;
+      padding: 3rem 0rem;
+    }
+}
+
+@media screen and (max-width:560px) {
+
+    .footerBanner {
+        height: 35.5%;
+    }
+
+    .footerMain {
+        height: calc(100% - 35.5%);
+        padding: 1rem 0rem;
+    }
+
+    .footerBanner h4 {
         font-size: 2.5rem;
     }
+
+    .card1,
+    .card2,
+    .card3,
+    .MediaContainer {
+        width: 82%;
+        height: 30%;
+    }
+
+    .card2 img {
+        width: 23%;
+    }
+
+    .MediaContainer ul li {
+        width: 61px;
+        height: 61px;
+    }
+
+    .MediaContainer ul li:nth-child(1) {
+        background-position: -267px -108px;
+        ;
+    }
+
+    .MediaContainer ul li:nth-child(1):hover {
+        background-position: -267px -7px;
+        ;
+    }
+
+    .MediaContainer ul li:nth-child(2) {
+        background-position: -97px -105px;
+    }
+
+    .MediaContainer ul li:nth-child(2):hover {
+        background-position: -97px -6px;
+    }
+
+    .MediaContainer ul li:nth-child(3) {
+        background-position: 68px -103px;
+    }
+
+    .MediaContainer ul li:nth-child(3):hover {
+        background-position: 68px -7px;
+    }
+
 }
 
 @media screen and (max-width:436px) {
-    .footerBanner h4{
+    .footerBanner h4 {
         font-size: 2rem;
+    }
+    .card1 p,
+    .card1 a,
+    .card3 p,
+    .card3 a{
+        font-size: 0.9rem;
+    }
+
+    .card2 img {
+        width: 38%;
+    }
+
+    .MediaContainer ul li{
+        width: 70px;
+        height: 70px;
+    }
+    .MediaContainer ul li:nth-child(1) {
+        background-position: -260px -101px;
+    }
+    .MediaContainer ul li:nth-child(1):hover {
+        background-position: -260px -1px;
+        ;
+    }
+    .MediaContainer ul li:nth-child(2) {
+        background-position: -94px -100px;
+    }
+    .MediaContainer ul li:nth-child(2):hover {
+        background-position: -92px 0px;
+    }
+    .MediaContainer ul li:nth-child(3) {
+        background-position: 72px -99px;
+    }
+    .MediaContainer ul li:nth-child(3):hover {
+        background-position: 73px 1px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    
+    .card1,
+    .card2,
+    .card3,
+    .MediaContainer {
+        width: 82%;
+        height: 30%;
+    }
+
+    .card1 p,
+    .card1 a,
+    .card3 p,
+    .card3 a{
+        font-size: 0.8rem;
+    }
+
+    .card2 img {
+        width: 33%;
+    }
+
+    .MediaContainer ul li {
+        width: 61px;
+        height: 61px;
+    }
+
+    .MediaContainer ul li:nth-child(1) {
+        background-position: -267px -108px;
+        ;
+    }
+
+    .MediaContainer ul li:nth-child(1):hover {
+        background-position: -267px -7px;
+        ;
+    }
+
+    .MediaContainer ul li:nth-child(2) {
+        background-position: -97px -105px;
+    }
+
+    .MediaContainer ul li:nth-child(2):hover {
+        background-position: -97px -6px;
+    }
+
+    .MediaContainer ul li:nth-child(3) {
+        background-position: 68px -103px;
+    }
+
+    .MediaContainer ul li:nth-child(3):hover {
+        background-position: 68px -7px;
+    }
+
+}
+
+@media screen and (max-width:300px) {
+    
+    .footerMain{
+        padding: 2rem 0rem;
+    }
+    .card1 p,
+    .card1 a,
+    .card3 p,
+    .card3 a{
+        font-size: 0.6rem;
+    }
+    .footerBanner h4{
+        font-size: 1.4rem;
     }
 }

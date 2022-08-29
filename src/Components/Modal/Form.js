@@ -53,6 +53,3 @@ const Form = ({ toggleModal }) => {
 
 export default Form;
 
-// {`${S.modal}`} onClick={(e) => {
-//   e.stopPropagation();
-// }}

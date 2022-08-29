@@ -1,12 +1,3 @@
-@font-face {
-    src: url(../../../Fonts/DIN-Bold.ttf);
-    font-family:'DIN-BOLD';
-}
-@font-face {
-    src: url(../../../Fonts/DIN-Light.ttf);
-    font-family:'DIN-LIGHT';
-}
-
 .cardHeader{
     display: flex;
     flex-direction: column;
@@ -19,7 +10,7 @@
     margin-bottom: 1.7rem;
     font-size: 3rem;
     font-family: 'DIN-BOLD';
-    color: #1E1E1E;
+    color: var(--secondary-color);
     letter-spacing: -4px;
     word-spacing: 7px;
 }
@@ -39,8 +30,8 @@
 }
 
 .imgdesc button,.button button{
-    background-color: #F1C761;
-    color: #1E1E1E;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
     width: 35%;
     font-family: 'DIN-LIGHT';
     letter-spacing: -1px;
@@ -56,7 +47,7 @@
     width: 0%;
     height: 100%;
     position: absolute;
-    background-color: #1E1E1E;
+    background-color: var(--secondary-color);
     top: 0;
     left: 0;
     transition: width 0.3s ease;

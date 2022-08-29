@@ -18,7 +18,7 @@ export const AboutCardData = [
     {
         img:why,
         heading:"WHY CHOOSE US?",
-        description:"What comes to our minds while preparing for a date,throwing a corporate party,or having a college reunion with old friends? if your answer is a perfect experience. Then this is the right place for you. At king's bar and restaurant, we give you the best ambiance for all your formal and informal get-together. Our team, under the guidance of our founder especially designed and crafted everything from lighting to flooring/roofing, from theme to seating, and everything to provide you a never-ending experience of dusk till dawn."
+        description:"What comes to our minds while preparing for a date,throwing a corporate party,or having a college reunion with old friends? if your answer is a perfect experience and tons of value-added services,then this is the right place for you. At king's bar and restaurant, we give you the best experience and amenities for all your formal and informal get-together. AtKings,every customer us our king,and we know how to make you feel like a king"
     },
     { 
         img:Ambience,

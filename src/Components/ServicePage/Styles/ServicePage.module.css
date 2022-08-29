@@ -1,11 +1,6 @@
-@font-face {
-    font-family:'DIN-BOLD';
-    src: url(../../../Fonts/DIN-Bold.ttf);
-}
-
 .serviceHeader{
     height: 85vh;
-    background: url(../../../images/Services\ banner\ image.png);
+    background: url(../../../images/Services\ banner\ image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -32,7 +27,7 @@
 }
 
 .serviceBody{
-    background-color: #EFEDE8;
+    background-color: var(--background-color);
     min-height: 100vh;
     padding: 2rem 1rem;
 }
@@ -130,10 +125,13 @@
 
 }
 
-@media screen and (max-width:395px) {
+@media screen and (max-width:440px) {
     
     .serviceHeader{
         height: 70vh;
+    }
+    .serviceBody{
+        padding: 1rem 1rem;
     }
 }
 

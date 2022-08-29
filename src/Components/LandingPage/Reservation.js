@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import S from "./Styles/Reservation.module.css";
 import St from "./Styles/ResCard.module.css";
 import "./Styles/Reservation2.css";
@@ -24,6 +24,12 @@ const Reservation = () => {
   //   Year = ${selectedDay.getFullYear()}
   
   // `);
+
+  useEffect(()=>{
+
+    document.querySelector('.react-datepicker__input-container>input').setAttribute('readonly',true);
+
+  })
 
   const [showModal, setshowModal] = useState(false);
 
@@ -102,7 +108,7 @@ const Reservation = () => {
             <div className={`${S.input}`}>
               <a href="#" className="icon-alarm"></a>
               <select type="text">
-                <option value="">Pick A Day</option>
+                <option value="">Pick A Time</option>
                 <option value="">9:00 Am</option>
                 <option value="">11:00 Am</option>
                 <option value="">1:00 Am</option>

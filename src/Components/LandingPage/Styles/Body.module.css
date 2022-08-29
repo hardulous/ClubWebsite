@@ -1,15 +1,6 @@
-@font-face {
-    src: url(../../../Fonts/DIN-Bold.ttf);
-    font-family:'DIN-BOLD';
-}
-@font-face {
-    src: url(../../../Fonts/DIN-Light.ttf);
-    font-family:'DIN-LIGHT';
-}
-
 .bodyContainer{
     min-height: 80vh;
-    background-color: #EFEDE8;
+    background-color: var(--background-color);
     padding: 1rem;
     overflow: hidden;
 }
@@ -33,7 +24,7 @@
     text-align: center;
     font-size: 2.5rem;
     font-family: 'DIN-Bold';
-    color: #1E1E1E;
+    color: var(--secondary-color);
 }
 
 .bodyOneText{

@@ -1,19 +1,5 @@
-@font-face {
-    src: url(../../../Fonts/DIN-Bold.ttf);
-    font-family:'DIN-BOLD';
-}
-@font-face {
-    src: url(../../../Fonts/DIN-Light.ttf);
-    font-family:'DIN-LIGHT';
-}
-
-@font-face {
-    src: url(../../../Fonts/HunterRiver-Regular.otf);
-    font-family:'HunterRiver' 
-}
-
 .card{
-   background-color: #E4DFD8;
+   background-color: var(--card-background-color);
    padding: 1.4rem 1rem;
    display: flex;
    justify-content: center;
@@ -43,7 +29,7 @@
 }
 
 .cardHeading h6:hover{
-    background-color: #F1C761;
+    background-color: var(--main-color);
 }  
 
 .cardBody{
@@ -80,7 +66,7 @@
 }
 
 .iconText{
-    color: #F1C761;
+    color: var(--main-color);
     position: absolute;
     top: 13%;
     font-weight: bolder;

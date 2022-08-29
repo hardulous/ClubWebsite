@@ -1,15 +1,6 @@
-@font-face {
-    src: url(../../../Fonts/DIN-Bold.ttf);
-    font-family:'DIN-BOLD';
-}
-@font-face {
-    src: url(../../../Fonts/DIN-Light.ttf);
-    font-family:'DIN-LIGHT';
-}
-
 .ReservationContainer{
     min-height: 50vh;
-    background-color: #EFEDE8;
+    background-color: var(--background-color);
     padding: 3rem 1rem 1rem 1rem;
 }
 
@@ -39,7 +30,7 @@
 
 .upperHeader h1{
     font-family: 'DIN-BOLD';
-    color: #1E1E1E;
+    color: var(--secondary-color);
     font-size: 4rem;
     font-weight: bold;
     word-spacing: 0px;
@@ -89,8 +80,8 @@
 }
 
 .input button{
-    background-color: #F1C761;
-    color: #1E1E1E;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
     border: none;
     position: relative;
     z-index: 1;
@@ -101,7 +92,7 @@
     width: 0%;
     height: 100%;
     position: absolute;
-    background-color: #1E1E1E;
+    background-color: var(--secondary-color);
     top: 0;
     left: 0;
     transition: width 0.3s ease;
@@ -121,7 +112,7 @@
     color: #746969;
     font-family: 'DIN-LIGHT';
     font-weight: bolder;
-    background-color: #1E1E1E;
+    background-color: var(--secondary-color);
 }
 
 .resLower{
@@ -130,7 +121,7 @@
 
 .calClass{
     font-family: 'DIN-LIGHT';
-    background-color: #EFEDE8;
+    background-color: var(--background-color);
 }
 
 @media screen and (max-width:1128px) {
@@ -205,7 +196,7 @@
 
 .colCard{
     padding: 1rem 1rem 2rem 1rem;
-    background-color: #E4DFD9;
+    background-color: var(--card-background-color);
     width: 45%;
 }
 

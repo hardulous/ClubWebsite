@@ -1,9 +1,9 @@
-import akshat from "../../images/akshat.PNG"
-import aman from "../../images/Testimonial/Mangur.png"
-import shivam from "../../images/Testimonial/Shivam.png"
-import sanjay from "../../images/Testimonial/Sanjay.png"
-import garima from "../../images/Testimonial/GARIMA.png"
-import jasika from "../../images/Testimonial/Jasika.png"
+import akshat from "../../images/Testimonial/Akashat.jpg"
+import aman from "../../images/Testimonial/Mangur.jpg"
+import shivam from "../../images/Testimonial/Shivam.jpg"
+import sanjay from "../../images/Testimonial/Sanjay.jpg"
+import garima from "../../images/Testimonial/GARIMA.jpg"
+import jasika from "../../images/Testimonial/Jasika.jpg"
 
 export const TestimonialCardData = [
 

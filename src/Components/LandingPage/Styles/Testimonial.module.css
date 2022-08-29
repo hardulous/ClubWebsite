@@ -1,17 +1,7 @@
-@font-face {
-    font-family: 'DIN-BOLD';
-    src: url(../../../Fonts/DIN-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'DIN-LIGHT';
-    src: url(../../../Fonts/DIN-Light.ttf);
-}
-
 .TestimonialContainer{
     min-height: 30vh;
     padding: 1rem 0rem;
-    background-color: #1e1e1e;
+    background-color: var(--secondary-color);
     color: white;
     display: flex;
     flex-direction: column;
@@ -21,7 +11,7 @@
 }
 
 .TestimonialContainer h1{
-    color: #F1C761;
+    color: var(--main-color);
     font-size: 2.3rem;
     font-family: 'DIN-BOLD';
     margin: 0px;
@@ -65,12 +55,11 @@
 .testimonialText h4{
     text-align: center;
     font-family: 'DIN-BOLD';
-    color: #98f9f5;
     margin: 0px;
 }
 
 .testimonialText h4 span{
-    color: #F1C761;
+    color: var(--main-color);
 }
 
 @media screen and (max-width:1500px) {

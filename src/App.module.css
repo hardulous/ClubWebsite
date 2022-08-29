@@ -4,6 +4,31 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'DIN-BOLD';
+    src: url(./Fonts/DIN-Bold.ttf);
+}
+@font-face {
+    font-family: 'DIN-LIGHT';
+    src: url(./Fonts/DIN-Light.ttf);
+}
+@font-face {
+    font-family: 'Hallies';
+    src: url(./Fonts/Hallies.ttf);
+}
+@font-face {
+    font-family: 'HunterRiver';
+    src: url(./Fonts/HunterRiver-Regular.otf);
+}
+
+/* All font-family and colors being used in website */
+:root {
+    --main-color:#F1C761;
+    --secondary-color:#1E1E1E;
+    --background-color:#EFEDE8;
+    --card-background-color:#E4DFD8;
+}
+
 body{
     overflow-x: hidden;
 }
@@ -15,7 +40,7 @@ body{
 }
 
 ::-webkit-scrollbar-track{
-    background-color: #1e1e1e;
+    background-color: var(--secondary-color);
 }
 
 ::-webkit-scrollbar-thumb{
@@ -23,5 +48,5 @@ body{
 }
 
 ::-webkit-scrollbar-thumb:hover{
-    background-color: #F1C760;
+    background-color: var(--main-color);
 }

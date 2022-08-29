@@ -32,7 +32,7 @@ const Navbar = () => {
     
     if(location.pathname===path){
       return {
-        color:"#F1C760"
+        color:"var(--main-color)"
       }
     }
     else{
@@ -81,7 +81,7 @@ const Navbar = () => {
     const navbar = document.querySelector(`.${S.head} header`);
     
     if(location.pathname==="/"){
-      navbar.style.backgroundColor = "#060606"
+      navbar.style.backgroundColor = "var(--secondary-color)"
       navbar.parentElement.style.position="relative"
     }
     else{
@@ -272,17 +272,23 @@ const Navbar = () => {
                   GALLERY
                 </Link>
               </li>
-              <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
+              <li className={`${S.navitem} ${showHam ? S.active : ""}`}  
+              
+              onClick={()=>{
+                  if(showHam){
+                    toggleHam()
+                    window.location.href="/#Reservation"
+                  }
+                  else{
+                    window.location.href="/#Reservation"
+                  }
+                }}>
+
                 <span>
                   <IoBeerOutline />
                 </span>
                 <a href="/#Reservation" className={`${S.navlink}`}
-                
-                onClick={()=>{
-                  if(showHam) toggleHam()
-                  else return
-                }}
-
+              
                 style={
                   isActiveUrl("/#Reservation")
                 }

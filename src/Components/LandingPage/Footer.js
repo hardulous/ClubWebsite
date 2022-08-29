@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
         <div className={`${S.card3}`}>
           <a href='tel:8588888808' className='icon-phone'>91+ 8588888808</a>
-          <p>Mg Road, Gurugram, Haryana: 122015</p>
+          <p>LGF,JMD Regent Arcade Mall,MG Road,Gurugram</p>
         </div>
         <div className={`${S.MediaContainer}`}>
           <ul>

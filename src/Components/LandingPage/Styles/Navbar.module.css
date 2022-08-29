@@ -1,8 +1,3 @@
-@font-face {
-    src: url(../../../Fonts/DIN-Bold.ttf);
-    font-family:'DIN-BOLD';
-}
-
 .head{
     height: 116px;
     position: relative;
@@ -10,7 +5,6 @@
 }
 
 .head header{
-    background-color: #060606;
     padding: 12px;
     /* position: fixed; */
     width: 100%;
@@ -59,7 +53,7 @@
 }
 
 .navmenu3 li:nth-child(2) a{
-    color: #F1C761;
+    color: var(--main-color);
 }
 
 .navitem{
@@ -99,13 +93,13 @@
 }
 
 .subMenu a:hover{
-    color: #F1C761;
+    color: var(--main-color);
 }
 
 .subMenu a::after{
     content: "";
     position: absolute;
-    background-color: #F1C761;
+    background-color: var(--main-color);
     height: 3px;
     width: 0%;
     left: 0%;
@@ -123,7 +117,7 @@
     top: -1.4rem;
     left: 2rem;
     border: 0.6rem solid transparent;
-    border-bottom-color: #F1C761;
+    border-bottom-color: var(--main-color);
 }
 
 .subMenu .subMenu::before{ 
@@ -132,15 +126,15 @@
     top: 0rem;
     left: -1.4rem;
     border: 0.6rem solid transparent;
-    border-right-color: #F1C761;
+    border-right-color: var(--main-color);
 }
 
 .subMenu{
     width: 11rem;
     position: absolute;
     display: block;
-    border-top: 3px solid #F1C761;
-    background-color: #060606;
+    border-top: 3px solid var(--main-color);
+    background-color: var(--secondary-color);
     z-index: 100;
     top: 10rem;
     opacity: 0;
@@ -225,7 +219,7 @@
 }
 
 .navmenu3 li span{
-    color: #F1C761;
+    color: var(--main-color);
     position: absolute;
     left: -1.9rem;
     font-size: 2rem;
@@ -242,13 +236,13 @@
 }
 
 .navlink:hover{
-    color: #F1C761;
+    color: var(--main-color);
 }
 
 .navlink::after{
     content: "";
     position: absolute;
-    background-color: #F1C761;
+    background-color: var(--main-color);
     height: 3px;
     width: 0%;
     left: 0%;
@@ -266,6 +260,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .navmenu3 li:nth-child(2) span{
@@ -274,15 +269,15 @@
 }
 
 .navmenu3 li:nth-child(2):hover{
-    background-color: #F1C761;
+    background-color: var(--main-color);
 }
 
 .navmenu3 li:nth-child(2):hover span{
-    color: #060606;
+    color: var(--secondary-color);
 } 
 
 .navmenu3 li:nth-child(2):hover a{
-    color: #060606;
+    color: var(--secondary-color);
 }
 
 
@@ -318,7 +313,7 @@
 /* Scroll to top css start */
 
 .scrollTop{
-    color: #F1C761;
+    color: var(--main-color);
     position: fixed;
     border-radius: 0%;
     opacity: 0;
@@ -326,13 +321,13 @@
     bottom: 1rem;
     z-index: 1000;
     transition: 0.5s ease;
-    background-color: #060606;
+    background-color: var(--secondary-color);
 }
 
 .scrollTop:hover{
     border-radius: 50%;
-    background-color:#F1C761;
-    color: #060606;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
 }
 
 .scrollTop.active{
@@ -390,8 +385,8 @@
     }
 
     .menu{
-        top: 3%;
-        background-color: #060606;
+        top: 0%;
+        background-color: var(--secondary-color);
         width: 100%;
         height: 100%;
         display: flex;

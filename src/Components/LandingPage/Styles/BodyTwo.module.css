@@ -1,16 +1,6 @@
-@font-face {
-    src: url(../../../Fonts/DIN-Bold.ttf);
-    font-family:'DIN-BOLD';
-}
-@font-face {
-    src: url(../../../Fonts/DIN-Light.ttf);
-    font-family:'DIN-LIGHT';
-}
-
-
 .bodyTwoContainer{
     min-height: 55vh;
-    background-color: #1e1e1e;
+    background-color: var(--secondary-color);
     padding: 3rem 1rem 1rem 2rem;
     overflow: hidden;
 }
@@ -72,7 +62,7 @@
 
 .lowerText ul li::before{
     content: "\2022";  
-    color: #F1C761; 
+    color: var(--main-color); 
     font-weight: bold; 
     display: inline-block;
     width: 1em;

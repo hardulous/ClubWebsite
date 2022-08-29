@@ -1,18 +1,3 @@
-@font-face {
-    src: url(../../../Fonts/DIN-Bold.ttf);
-    font-family: 'DIN-BOLD';
-}
-
-@font-face {
-    src: url(../../../Fonts/DIN-Light.ttf);
-    font-family: 'DIN-LIGHT';
-}
-
-@font-face {
-    font-family: "Hallies";
-    src: url(../../../Fonts/Hallies.ttf);
-}
-
 .FooterContainer {
     height: 100vh;
     color: #a3a3a3;
@@ -41,7 +26,7 @@
 .footerMain {
     height: calc(100% - 45.5%);
     width: 100%;
-    background-color: #1E1E1E;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,7 +93,7 @@
 .card3 a:hover::before,
 .card1 a:hover,
 .card3 a:hover {
-    color: #F1C761;
+    color: var(--main-color);
 }
 
 /* Image Sprite social media */

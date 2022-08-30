@@ -1,0 +1,180 @@
+.menuHeadContainer{
+    height: 85vh;
+    background: linear-gradient(rgba(10, 10, 10, 0.897),rgba(0, 0, 0, 0.288),rgba(10, 10, 10, 0.829)) , url(../../../images/3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.menuHeadContainer h1{
+    font-family: 'DIN-BOLD';
+    font-size: 4rem;
+    color: #ffffff;
+    transform: translateY(300px);
+    opacity: 0;
+    transition-property: transform opacity;
+    transition-duration: 1400ms;
+    transition-delay: 1s;
+}
+
+.menuHeadContainer h1.fadeIn{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.menuBody{
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    position: relative;
+    background-color: white;
+    width: 32%;
+    height: 600px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    box-shadow: 10px 20px 40px rgba(0,0,0,0.25);
+    transition: 1s;
+}
+
+.menu .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menu .imgBox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    background-color: black;
+    transition: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .imgBox h4{
+    color: #f1c760;
+    font-size: 3rem;
+    z-index: -1;
+    transform: rotateY(180deg);
+}
+
+/* Trigger menu open animation */
+
+.menu:hover{
+    transform: translateX(50%);
+}
+
+.menu:hover .imgBox{
+    transform: rotateY(-180deg);
+    border-left: 0.4px solid #f1c760;
+}
+
+.menu .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;  /* on rotation will hide image on backside and show background color only */
+}
+
+.menu .imgBox img:nth-child(2){
+    z-index: -2;
+    transform: rotateY(180deg);
+}
+
+
+.content{
+    background:url(../../../images/Menu/Menu\ G....jpg);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+.content h4{
+    text-align: center;
+    color: #f1c760;
+    padding: 1rem;
+    display: flex;
+    z-index: 0;
+    justify-content: center;
+}
+
+.content h4 span{
+    font-family: 'DIN-BOLD';
+    position: relative;
+    font-size: 2rem;
+}
+
+.content h4 span::before{
+   content: '';
+   position: absolute;
+   bottom: -15%;
+   left: 0%;
+   height: 2px;
+   width: 0%;
+   background-color:#f1c760;
+   transition: width 500ms;
+}
+
+.content span:hover::before{
+    width: 100%;
+}
+
+.content ul{
+  margin: 0px;
+  padding: 0px;   
+  list-style: none;
+}
+
+.content ul li{
+    color: #f1c760;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    transform: scale(0.9,0.9);
+    transition: transform 300ms;
+}
+
+.content ul li p{
+    display: flex;
+    font-family: 'DIN-LIGHT';
+    width: 76%;
+    padding-left: 0.4rem;
+}
+
+.content ul li:hover{
+    transform: scale(1,1);
+}
+
+.content ul li p::before{
+    content: "";
+    border-color: transparent #f1c760;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0px;
+    width: 12px;
+    position: relative;
+    z-index: 2;
+}

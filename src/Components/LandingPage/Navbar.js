@@ -125,24 +125,24 @@ const Navbar = () => {
 
                     <ul className={S.subMenu}>
                       <li>
-                        <a href="#"
+                        <Link to="/menu/drinks/alcoholic"
                         
                         onClick={()=>{
                           if(showHam) toggleHam()
                           else return
                         }}
 
-                        >Alcoholic</a>
+                        >Alcoholic</Link>
                       </li>
                       <li>
-                        <a href="#"
+                        <Link to="/menu/drinks/non_alcoholic"
                         
                         onClick={()=>{
                           if(showHam) toggleHam()
                           else return
                         }}
 
-                        >Non-Alcoholic</a>
+                        >Non-Alcoholic</Link>
                       </li>
                     </ul>
                   </li>

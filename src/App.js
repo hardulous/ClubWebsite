@@ -8,6 +8,7 @@ import AboutUsPage from "./Components/AboutUsPage/AboutUsPage.js";
 import ServicePage from "./Components/ServicePage/ServicePage.js";
 import GalleryPage from "./Components/GalleryPage/GalleryPage.js";
 import Footer from "./Components/LandingPage/Footer.js";
+import MenuHandler from "./Components/MenuPage.js/MenuHandler.js";
 
 function App() {
   return (
@@ -21,6 +22,11 @@ function App() {
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/menu/:category/:class" element={
+            <MenuHandler>               
+               <h1>MENU PAGE</h1>
+            </MenuHandler>      
+          } />
         </Routes>
 
         <div className={`${S1.FooterContainer}`}>

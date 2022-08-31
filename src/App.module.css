@@ -20,6 +20,10 @@
     font-family: 'HunterRiver';
     src: url(./Fonts/HunterRiver-Regular.otf);
 }
+@font-face {
+    font-family: 'BURENO-LIGHT';
+    src: url(./Fonts/Bureno\ Regular.ttf);
+}
 
 /* All font-family and colors being used in website */
 :root {

@@ -22,11 +22,8 @@ function App() {
           <Route path="/about" element={<AboutUsPage />} />
           <Route path="/service" element={<ServicePage />} />
           <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/menu/:category/:class" element={
-            <MenuHandler>               
-               <h1>MENU PAGE</h1>
-            </MenuHandler>      
-          } />
+          <Route path="/menu/:category/:class/" element={<MenuHandler/>}/>
+          <Route path="/menu/:category/:class/:subClass" element={<MenuHandler/>}/>
         </Routes>
 
         <div className={`${S1.FooterContainer}`}>

@@ -13,7 +13,7 @@
 .serviceHeader h1{
     font-family: 'DIN-BOLD';
     font-size: 4rem;
-    color: #ffffff;
+    color: var(--main-color);
     transform: translateY(300px);
     opacity: 0;
     transition-property: transform opacity;

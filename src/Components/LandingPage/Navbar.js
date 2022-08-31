@@ -148,7 +148,7 @@ const Navbar = () => {
                   </li>
 
                   <li>
-                    <a href="#">Tables</a>
+                    <a href="#">e-Tables</a>
 
                     <ul className={S.subMenu}>
                       <li>
@@ -156,24 +156,24 @@ const Navbar = () => {
 
                         <ul className={S.subMenu}>
                           <li>
-                            <a href="#"
+                            <Link to="/menu/etables/veg/starters"
                             
                             onClick={()=>{
                               if(showHam) toggleHam()
                               else return
                             }}
 
-                            >Starters</a>
+                            >Starters</Link>
                           </li>
                           <li>
-                            <a href="#"
+                            <Link to="/menu/etables/veg/main_course"
                             
                             onClick={()=>{
                               if(showHam) toggleHam()
                               else return
                             }}
 
-                            >Main Course</a>
+                            >Main Course</Link>
                           </li>
                         </ul>
                       </li>
@@ -183,24 +183,24 @@ const Navbar = () => {
 
                         <ul className={S.subMenu}>
                           <li>
-                            <a href="#"
+                            <Link to="/menu/etables/non_veg/starters"
                             
                             onClick={()=>{
                               if(showHam) toggleHam()
                               else return
                             }}
 
-                            >Starters</a>
+                            >Starters</Link>
                           </li>
                           <li>
-                            <a href="#"
+                            <Link to="/menu/etables/non_veg/main_course"
                             
                             onClick={()=>{
                               if(showHam) toggleHam()
                               else return
                             }}
 
-                            >Main Course</a>
+                            >Main Course</Link>
                           </li>
                         </ul>
                       </li>

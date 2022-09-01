@@ -11,9 +11,9 @@ const ResModal = ({toggleModal}) => {
  
   useEffect(()=>{
 
-    setTimeout(()=>{
-       setLoading(!Loading)
-    },3000)
+    // setTimeout(()=>{
+    //    setLoading(!Loading)
+    // },3000)
 
   },[])
 

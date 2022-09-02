@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     height: calc( 110vh - 116px );
-    background:linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.24)) , url(../../../images/areial-view.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.356),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.24)) , url(../../../images/areial-view.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -262,6 +262,7 @@
     
     .container{
         height: calc( 70vh - 116px );
+        background-position: 52%;
     }
     
     .beer{

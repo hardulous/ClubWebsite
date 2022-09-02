@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import S from "./Styles/Navbar.module.css";
-import logoTwo from "../../images/club-logo-fin.png";
+// import logoTwo from "../../images/club-logo-fin.png";
 import { IoBeerOutline } from "react-icons/io5";
 import { HiOutlinePhotograph } from "react-icons/hi";
 import { AiOutlineArrowUp } from "react-icons/ai";
-import cursor from "../../images/cursor.png"
 
 const Navbar = () => {
 
@@ -61,15 +60,6 @@ const Navbar = () => {
         scrollElement.removeEventListener("click", scrollTop);
       }
     });
-    
-    const tracker = document.querySelector(`.${S.tracker}`);
-
-    document.body.addEventListener('mousemove',(e)=>{
-
-      tracker.style.left = `${e.clientX}px`
-      tracker.style.top = `${e.clientY}px`
-
-    })
 
   }, []);
 
@@ -245,7 +235,7 @@ const Navbar = () => {
             <ul className={`${S.navmenu2} ${S.marginutil} ${S.paddingutil}`}>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
                 <img
-                  src={logoTwo}
+                  src='https://ik.imagekit.io/amanbisht/images/logo.png'
                   alt="club-logo"
                   className={`${S.navimage}`}
                 />
@@ -315,11 +305,6 @@ const Navbar = () => {
             <AiOutlineArrowUp />
           </div>
         </nav>
-
-         {/* Custom cursor tracker */}
-         <div className={S.tracker}>
-           <img src={cursor}/>
-         </div>
 
       </header>
     </div>

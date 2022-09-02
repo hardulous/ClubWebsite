@@ -1,12 +1,12 @@
-import chef from "../../images/chief.png"
-import hygiene from "../../images/HYGIENE.png"
-import who from "../../images/who are we.png"
-import why from "../../images/why choose us.png"
-import affordable from "../../images/AFFORDABILITY.png"
-import vision from "../../images/OUR VISION.png"
+import chef from "../../images/chief.webp"
+import hygiene from "../../images/HYGIENE.webp"
+import who from "../../images/who are we.webp"
+import why from "../../images/why choose us.webp"
+import affordable from "../../images/AFFORDABILITY.webp"
+import vision from "../../images/OUR VISION.webp"
 import value from "../../images/OUR VALUES.png"
-import nature from "../../images/CONTRIBUTING.png"
-import Ambience from "../../images/Ambience.png"
+import nature from "../../images/CONTRIBUTING.webp"
+import Ambience from "../../images/Ambience.webp"
 
 export const AboutCardData = [
 

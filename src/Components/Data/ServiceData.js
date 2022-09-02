@@ -1,7 +1,7 @@
-import club from "../../images/serviceClub.png"
-import bar from "../../images/bar.png"
-import Dj from "../../images/Dj.png"
-import PartyEvent from "../../images/PartyEvent.png"
+import club from "../../images/serviceClub.webp"
+import bar from "../../images/bar.webp"
+import Dj from "../../images/Dj.webp"
+import PartyEvent from "../../images/PartyEvent.webp"
 export const ServiceData = [
 
     {

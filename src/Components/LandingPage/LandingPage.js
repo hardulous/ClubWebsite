@@ -4,7 +4,7 @@ import St from "./Styles/Body.module.css";
 import Ss from "./Styles/BodyTwo.module.css";
 import Sst from "./Styles/Reservation.module.css";
 import S1 from "./Styles/Testimonial.module.css";
-import beer from '../../images/Wine-final.png';
+import beer from '../../images/Wine-final.webp';
 import Body from "./Body";
 import BodyTwo from "./BodyTwo";
 import Reservation from "./Reservation";

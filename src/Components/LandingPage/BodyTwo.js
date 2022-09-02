@@ -1,6 +1,6 @@
 import React from 'react'
 import S from './Styles/BodyTwo.module.css'
-import logo from "../../images/food-banner.png"
+import logo from "../../images/food-banner.webp"
 
 const BodyTwo = () => {
 

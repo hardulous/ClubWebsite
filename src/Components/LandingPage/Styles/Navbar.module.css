@@ -192,8 +192,6 @@
 
 /* hover drop down css end */
 
-
-
 .navmenu2 li{
     transition: transform 500ms ease;
     transition-delay: 200ms;
@@ -317,7 +315,7 @@
     position: fixed;
     border-radius: 0%;
     opacity: 0;
-    right: 2rem;
+    right: 1rem;
     bottom: 1rem;
     z-index: 1000;
     transition: 0.5s ease;
@@ -336,30 +334,10 @@
 }
 
 .scrollTop svg{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 /* Scroll to top css end */
-
-/* Custom cursor tracker css start */
-
-.tracker{
-  position: fixed;
-  transform: translate(-50%,-50%);
-  z-index: 9999;
-  width: 40px;
-  pointer-events: none;
-  transition: all .15s;
-}
-
-.tracker img{
-    width: 35px;
-    height: 40px;
-    object-fit: contain;
-    opacity: 1;
-}
-
-/* Custom curstor tracker css end */
 
 @media screen and (max-width:890px) {
 
@@ -480,9 +458,6 @@
 
 @media screen and (max-width:850px) {
     
-    .tracker{
-       display: none;
-    }
     .navlink{
         font-size: 2.4rem;
     }

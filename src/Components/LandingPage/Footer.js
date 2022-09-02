@@ -1,6 +1,6 @@
 import React from 'react'
 import S from "./Styles/Footer.module.css"
-import logo from "../../images/club-logo-fin.png"
+import logo from "../../images/club-logo-fin.webp"
 import "../../icomon/style.css"
 
 

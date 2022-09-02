@@ -121,7 +121,7 @@
 .MediaContainer ul li {
     width: 68px;
     height: 67px;
-    background: url(../../../images/media-icon.png);
+    background: url(../../../images/media-icon.webp);
     display: inline-block;
     border-radius: 50%;
     cursor: pointer;

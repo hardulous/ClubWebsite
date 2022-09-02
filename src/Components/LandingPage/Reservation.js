@@ -3,7 +3,7 @@ import S from "./Styles/Reservation.module.css";
 import St from "./Styles/ResCard.module.css";
 import "./Styles/Reservation2.css";
 import "../../icomon/style.css";
-import club from '../../images/club-imageOne.png'
+import club from '../../images/club-imageOne.webp'
 import {useNavigate} from "react-router-dom"
 // react datapicker
 import DatePicker from "react-datepicker";

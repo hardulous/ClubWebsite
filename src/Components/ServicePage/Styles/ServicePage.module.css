@@ -1,6 +1,6 @@
-.serviceHeader{
+.serviceHead{
     height: 85vh;
-    background: url(../../../images/Services\ banner\ image.jpg);
+    background: url(../../../images/Services\ banner\ image.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -10,7 +10,7 @@
     background-attachment: fixed;
 }
 
-.serviceHeader h1{
+.serviceHead h1{
     font-family: 'DIN-BOLD';
     font-size: 4rem;
     color: var(--main-color);
@@ -21,7 +21,7 @@
     transition-delay: 1s;
 }
 
-.serviceHeader h1.fadeIn{
+.serviceHead h1.fadeIn{
     opacity: 1;
     transform: translateY(0%);
 }
@@ -57,11 +57,11 @@
         width: 40%;
     }
 
-    .serviceHeader{
+    .serviceHead{
         height: 72vh;
     }
 
-    .serviceHeader h1{
+    .serviceHead h1{
         font-size: 6rem;
     }
 }
@@ -72,11 +72,11 @@
       font-size: 6rem;
     }
 
-    .serviceHeader{
+    .serviceHead{
         height: 73vh;
     }
 
-    .serviceHeader h1{
+    .serviceHead h1{
         font-size: 6rem;
     }
   
@@ -108,18 +108,18 @@
         margin-top: 0rem;
     }
 
-    .serviceHeader{
+    .serviceHead{
         height: 60vh;
     }
 
-    .serviceHeader h1{
+    .serviceHead h1{
         font-size: 3.4rem;
     }
 }    
 
 @media screen and (max-width:540px) {
     
-    .serviceHeader{
+    .serviceHead{
         height: 72vh;
     }
 
@@ -127,7 +127,7 @@
 
 @media screen and (max-width:440px) {
     
-    .serviceHeader{
+    .serviceHead{
         height: 70vh;
     }
     .serviceBody{
@@ -137,7 +137,7 @@
 
 @media screen and (max-width:280px){
      
-    .serviceHeader h1{
+    .serviceHead h1{
       font-size: 2.6rem;
     }
   

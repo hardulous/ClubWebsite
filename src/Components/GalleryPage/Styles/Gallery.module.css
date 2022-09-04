@@ -1,0 +1,33 @@
+.aboutHead{
+    height: 85vh;
+    background: linear-gradient(rgba(10, 10, 10, 0.897),rgba(0, 0, 0, 0.288),rgba(10, 10, 10, 0.829)) , url(../../../images/club-image.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+  }
+  
+  .aboutHead h1{
+    font-family: 'DIN-BOLD';
+    font-size: 4rem;
+    color: var(--main-color);
+    transform: translateY(300px);
+    opacity: 0;
+    transition-property: transform opacity;
+    transition-duration: 1400ms;
+    transition-delay: 1s;
+  }
+  
+  .aboutHead h1.fadeIn{
+     opacity: 1;
+     transform: translateY(0%);
+  }
+  
+  .aboutBody{
+    background-color: var(--background-color);
+    min-height: 50vh;
+    padding: 2rem 1rem;
+  }

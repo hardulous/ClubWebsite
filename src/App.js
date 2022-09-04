@@ -23,36 +23,39 @@ function App() {
         <Navbar />
 
         <Routes>
-          <Route path="/" index element={<LandingPage />} />
-          <Route path="/about" element={
+          <Route exact path="/" index element={<LandingPage />} />
+          <Route exact path="/about" element={
 
             <React.Suspense fallback={<ResModal/>}>
               <LazyAbout/>
             </React.Suspense>
 
           } />
-          <Route path="/service" element={
+          <Route exact path="/service" element={
 
              <React.Suspense fallback={<ResModal/>}>
               <LazyService/>
             </React.Suspense>
 
           } />
-          <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/menu/:category/:class/" element={
+          <Route exact path="/gallery" element={<GalleryPage />} />
+          <Route exact path="/menu/:category/:class/" element={
 
             <React.Suspense fallback={<ResModal/>}>
               <LazyMenuHandler/>
             </React.Suspense>
 
           }/>
-          <Route path="/menu/:category/:class/:subClass" element={
+          <Route exact path="/menu/:category/:class/:subClass" element={
 
             <React.Suspense fallback={<ResModal/>}>
               <LazyMenuHandler/>
             </React.Suspense>
 
           }/>
+          <Route exact path="*" element={<>
+           <h1>404 NOT FOUND</h1>
+          </>} />
         </Routes>
 
         <div className={`${S1.FooterContainer}`}>

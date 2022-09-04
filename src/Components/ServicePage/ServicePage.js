@@ -4,12 +4,12 @@ import S from "./Styles/ServicePage.module.css";
 import S2 from "./Styles/ServiceCard.module.css"
 import {ServiceData} from "../Data/ServiceData.js"
 import ServiceCard from "./ServiceCard";
-
+import { Helmet } from "react-helmet";
 const ServicePage = () => {
 
   useEffect(() => {
 
-    document.querySelector(`.${S.serviceHeader} h1`).classList.add(`${S.fadeIn}`);
+    document.querySelector(`.${S.serviceHead} h1`).classList.add(`${S.fadeIn}`);
 
     const cardObserver = new IntersectionObserver((entries) => {
         
@@ -41,8 +41,11 @@ const ServicePage = () => {
   return (
 
     <>
-
-      <div className={`${S.serviceHeader}`}>
+      <Helmet>
+        <title>King's Bar And Restaurant - Service</title>
+        <meta  name="description" content="Service Page of our site"/>
+      </Helmet>
+      <div className={`${S.serviceHead}`}>
         <h1>SERVICES</h1>
       </div>
 

@@ -3,7 +3,7 @@ import S from "./Styles/Menu.module.css";
 import img1 from "../../images/Menu/Cover Page.jpg";
 import img2 from "../../images/Menu/Menu G....jpg";
 import { useLocation } from "react-router-dom";
-
+import { Helmet } from "react-helmet";
 const Menu = ({Menu}) => {
 
   const location = useLocation();
@@ -11,7 +11,10 @@ const Menu = ({Menu}) => {
   return (
 
     <>
-
+      <Helmet>
+        <title>King's Bar And Restaurant - {Menu.heading}</title>
+        <meta  name="description" content={`${Menu.heading} Menu Page of our site`}/>
+      </Helmet>
       <div className={S.menuHeadContainer}>
         <h1>{Menu.heading.toUpperCase()}</h1>
       </div>

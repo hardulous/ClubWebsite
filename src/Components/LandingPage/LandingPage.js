@@ -9,6 +9,7 @@ import Body from "./Body";
 import BodyTwo from "./BodyTwo";
 import Reservation from "./Reservation";
 import Testimonial from "./Testimonial";
+import Helmet from "react-helmet";
 
 const HeaderBody = () => {
   const [showBeer, setshowBeer] = useState(true);
@@ -93,6 +94,12 @@ const HeaderBody = () => {
     <>
     
     <div className={`container-fluid ${S.container}`}>
+
+      <Helmet>
+        <title>King's Bar And Restaurant - Home</title>
+        <meta  name="description" content="Landing Page of our site"/>
+      </Helmet>
+
       {showBeer ? (
         <div className={`${S.beer}`}>
           <img src={beer} alt="Beer.png" className={`${S.beerImg}`} />

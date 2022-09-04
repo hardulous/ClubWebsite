@@ -1,6 +1,6 @@
-.aboutHeaderContainer{
+ .aboutHeaderContainer{
   height: 85vh;
-  background: linear-gradient(rgba(10, 10, 10, 0.897),rgba(0, 0, 0, 0.288),rgba(10, 10, 10, 0.829)) , url(../../../images/club-image.jpg);
+  background: linear-gradient(rgba(10, 10, 10, 0.897),rgba(0, 0, 0, 0.288),rgba(10, 10, 10, 0.829)) , url(../../../images/club-image.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

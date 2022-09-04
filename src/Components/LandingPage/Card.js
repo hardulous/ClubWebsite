@@ -16,7 +16,7 @@ const Card = ( props ) => {
 
     }}>
 
-      <a href="/services" onClick={(e)=>{
+      <a href="/service" onClick={(e)=>{
         e.preventDefault();
       }}>
         <img src={icon} alt={`${alias}.png`} />        

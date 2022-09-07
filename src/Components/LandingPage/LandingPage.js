@@ -48,7 +48,7 @@ const HeaderBody = () => {
     }
 
     return ()=>{
-      // clearTimeout(stopTimeOut);
+      clearTimeout(stopTimeOut);
     }
 
   }, [showBeer]);
@@ -92,7 +92,7 @@ const HeaderBody = () => {
   return (
     
     <>
-    
+
     <div className={`container-fluid ${S.container}`}>
 
       <Helmet>
@@ -153,13 +153,6 @@ const HeaderBody = () => {
     <h1>TESTIMONIALS</h1>
        <Testimonial/>
     </div>
-
-    {/* <div className={`${S2.FooterContainer}`}>
-       <div className={`${S2.footerBanner}`}>
-         <h4>Give your tastebuds a<br />taste of ultimate authority</h4>
-       </div>
-       <Footer/>
-    </div> */}
 
     </>
 

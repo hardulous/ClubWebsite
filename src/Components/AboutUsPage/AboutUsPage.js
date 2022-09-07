@@ -5,6 +5,7 @@ import S2 from "./Styles/AboutCard.module.css"
 import { AboutCardData } from "../Data/AboutCardData.js";
 import AboutCard from "./AboutCard";
 import { Helmet } from "react-helmet";
+
 const AboutUsPage = () => {
 
   useEffect(() => {
@@ -40,6 +41,7 @@ const AboutUsPage = () => {
 
   return (
     <>
+
       <Helmet>
         <title>King's Bar And Restaurant - About</title>
         <meta  name="description" content="About Page of our site"/>
@@ -57,6 +59,7 @@ const AboutUsPage = () => {
           );
         })}
       </div>
+
     </>
   );
 };

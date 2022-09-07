@@ -5,6 +5,7 @@ import S2 from "./Styles/ServiceCard.module.css"
 import {ServiceData} from "../Data/ServiceData.js"
 import ServiceCard from "./ServiceCard";
 import { Helmet } from "react-helmet";
+
 const ServicePage = () => {
 
   useEffect(() => {
@@ -41,6 +42,7 @@ const ServicePage = () => {
   return (
 
     <>
+
       <Helmet>
         <title>King's Bar And Restaurant - Service</title>
         <meta  name="description" content="Service Page of our site"/>

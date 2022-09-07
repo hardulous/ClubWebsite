@@ -5,7 +5,7 @@
 }
 
 .head header{
-    padding: 12px;
+    padding: 0px;
     /* position: fixed; */
     width: 100%;
 }
@@ -19,10 +19,11 @@
 }
 
 .head header nav{
-    border: 1px solid #F1C761;
+    /* border: 1px solid #F1C761; */
     position: relative;
-    height: 128px;
+    height: 116px;
     display: flex;
+    box-shadow: 11px 5px 6px #f1c7616e;
 }
 
 .menu{
@@ -444,7 +445,7 @@
     }
 
     .head{
-        height: 70px;
+        height: 46px;
     }
 
     .navmenu3{

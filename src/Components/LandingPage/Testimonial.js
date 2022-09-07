@@ -13,7 +13,6 @@ const Testimonial = () => {
   // setting for slider
   const settings = {
 
-    dots: true,
     infinite: true,
     speed: 700,
     slidesToShow: 1,

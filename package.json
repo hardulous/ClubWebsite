@@ -1,7 +1,7 @@
 {
   "name": "clubwebsite",
   "version": "0.1.0",
-  "homepage": "https://kingrestaurantandbar.com",
+  "homepage": "https://kingrestaurantandbar.com/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",

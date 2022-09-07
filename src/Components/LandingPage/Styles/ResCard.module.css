@@ -39,6 +39,7 @@
     word-spacing: 4px;
     border: none;
     position: relative;
+    padding: 1rem;
     z-index: 1;
 }
 

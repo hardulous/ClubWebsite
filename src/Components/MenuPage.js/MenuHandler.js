@@ -2,8 +2,6 @@ import React from "react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import S from "./Styles/Menu.module.css";
-import img1 from "../../images/Menu/Cover Page.jpg";
-import img2 from "../../images/Menu/Menu G....jpg";
 import Menu from "./Menu.js";
 import {
   AlcoholicMenu,
@@ -13,18 +11,19 @@ import {
   NONVegetrianStarterMenu,
   NONVegeterianMainMenu,
 } from "../Data/MenuData.js";
+import Error from "../404Page/Error";
 
 const MenuHandler = () => {
   const location = useLocation();
 
   useEffect(() => {
     if (
-      location.pathname === "/menu/drinks/alcoholic" ||
-      location.pathname === "/menu/drinks/non_alcoholic" ||
-      location.pathname === "/menu/etables/veg/starters" ||
-      location.pathname === "/menu/etables/veg/main_course" ||
-      location.pathname === "/menu/etables/non_veg/starters" ||
-      location.pathname === "/menu/etables/non_veg/main_course"
+      location.pathname === "/menu/drinks/alcoholic/" ||
+      location.pathname === "/menu/drinks/non-alcoholic/" ||
+      location.pathname === "/menu/etables/veg/starters/" ||
+      location.pathname === "/menu/etables/veg/main-course/" ||
+      location.pathname === "/menu/etables/non-veg/starters/" ||
+      location.pathname === "/menu/etables/non-veg/main-course/"
     ) {
       document
         .querySelector(`.${S.menuHeadContainer} h1`)
@@ -32,22 +31,22 @@ const MenuHandler = () => {
     } else {
       return;
     }
-  }, []);
+  }, [location.pathname]);
 
-  if (location.pathname === "/menu/drinks/alcoholic") {
+  if (location.pathname === "/menu/drinks/alcoholic/") {
     return <Menu Menu={AlcoholicMenu} />;
-  } else if (location.pathname === "/menu/drinks/non_alcoholic") {
+  } else if (location.pathname === "/menu/drinks/non-alcoholic/") {
     return <Menu Menu={NONAlcoholicMenu} />;
-  } else if (location.pathname === "/menu/etables/veg/starters") {
+  } else if (location.pathname === "/menu/etables/veg/starters/") {
     return <Menu Menu={VegetrianStarterMenu} />;
-  } else if (location.pathname === "/menu/etables/veg/main_course") {
+  } else if (location.pathname === "/menu/etables/veg/main-course/") {
     return <Menu Menu={VegeterianMainMenu} />;
-  } else if (location.pathname === "/menu/etables/non_veg/starters") {
+  } else if (location.pathname === "/menu/etables/non-veg/starters/") {
     return <Menu Menu={NONVegetrianStarterMenu} />;
-  } else if (location.pathname === "/menu/etables/non_veg/main_course") {
+  } else if (location.pathname === "/menu/etables/non-veg/main-course/") {
     return <Menu Menu={NONVegeterianMainMenu} />;
   } else {
-    return <h1>404 NOT FOUND</h1>;
+    return null;
   }
 };
 

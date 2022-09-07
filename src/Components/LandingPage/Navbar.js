@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import S from "./Styles/Navbar.module.css";
-// import logoTwo from "../../images/club-logo-fin.png";
+import logo from "../../images/club-logo-fin.webp"
 import { IoBeerOutline } from "react-icons/io5";
 import { HiOutlinePhotograph } from "react-icons/hi";
 import { AiOutlineArrowUp } from "react-icons/ai";
@@ -115,7 +115,7 @@ const Navbar = () => {
 
                     <ul className={S.subMenu}>
                       <li>
-                        <Link to="/menu/drinks/alcoholic"
+                        <Link to="/menu/drinks/alcoholic/"
                         
                         onClick={()=>{
                           if(showHam) toggleHam()
@@ -125,7 +125,7 @@ const Navbar = () => {
                         >Alcoholic</Link>
                       </li>
                       <li>
-                        <Link to="/menu/drinks/non_alcoholic"
+                        <Link to="/menu/drinks/non-alcoholic/"
                         
                         onClick={()=>{
                           if(showHam) toggleHam()
@@ -146,7 +146,7 @@ const Navbar = () => {
 
                         <ul className={S.subMenu}>
                           <li>
-                            <Link to="/menu/etables/veg/starters"
+                            <Link to="/menu/etables/veg/starters/"
                             
                             onClick={()=>{
                               if(showHam) toggleHam()
@@ -156,7 +156,7 @@ const Navbar = () => {
                             >Starters</Link>
                           </li>
                           <li>
-                            <Link to="/menu/etables/veg/main_course"
+                            <Link to="/menu/etables/veg/main-course/"
                             
                             onClick={()=>{
                               if(showHam) toggleHam()
@@ -173,7 +173,7 @@ const Navbar = () => {
 
                         <ul className={S.subMenu}>
                           <li>
-                            <Link to="/menu/etables/non_veg/starters"
+                            <Link to="/menu/etables/non-veg/starters/"
                             
                             onClick={()=>{
                               if(showHam) toggleHam()
@@ -183,7 +183,7 @@ const Navbar = () => {
                             >Starters</Link>
                           </li>
                           <li>
-                            <Link to="/menu/etables/non_veg/main_course"
+                            <Link to="/menu/etables/non-veg/main-course/"
                             
                             onClick={()=>{
                               if(showHam) toggleHam()
@@ -199,7 +199,7 @@ const Navbar = () => {
                 </ul>
               </li>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
-                <Link to="/service" className={`${S.navlink}`}
+                <Link to="/service/" className={`${S.navlink}`}
                 
                 onClick={()=>{
                   if(showHam) toggleHam()
@@ -207,7 +207,7 @@ const Navbar = () => {
                 }}
 
                 style={
-                  isActiveUrl("/service")
+                  isActiveUrl("/service/")
                 }
 
                 >
@@ -215,7 +215,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
-                <Link to="/about" className={`${S.navlink}`}
+                <Link to="/about/" className={`${S.navlink}`}
                 
                 onClick={()=>{
                   if(showHam) toggleHam()
@@ -223,7 +223,7 @@ const Navbar = () => {
                 }}
 
                 style={
-                  isActiveUrl("/about")
+                  isActiveUrl("/about/")
                 }
                 
                 >
@@ -235,7 +235,7 @@ const Navbar = () => {
             <ul className={`${S.navmenu2} ${S.marginutil} ${S.paddingutil}`}>
               <li className={`${S.navitem} ${showHam ? S.active : ""}`}>
                 <img
-                  src='https://ik.imagekit.io/amanbisht/images/logo.png'
+                  src={logo}
                   alt="club-logo"
                   className={`${S.navimage}`}
                 />
@@ -247,7 +247,7 @@ const Navbar = () => {
                 <span>
                   <HiOutlinePhotograph />
                 </span>
-                <Link to="/gallery" className={`${S.navlink}`}
+                <Link to="/gallery/" className={`${S.navlink}`}
                 
                 onClick={()=>{
                   if(showHam) toggleHam()
@@ -255,7 +255,7 @@ const Navbar = () => {
                 }}
 
                 style={
-                  isActiveUrl("/gallery")
+                  isActiveUrl("/gallery/")
                 }
                 
                 >

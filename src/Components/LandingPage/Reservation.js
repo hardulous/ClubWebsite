@@ -13,9 +13,19 @@ import ResModal from "../Modal/ResModal";
 const Reservation = () => {
 
   const navigate = useNavigate()
+  const [Reservation, setReservation] = useState({
+    noOfPerson:0,
+    table:"",
+    date:new Date(),
+    time:"",
+    name:"",
+    gmail:"",
+    number:"",
+    paymentMethod:""
+  })
 
   // state variable for calendar
-  const [selectedDay, setSelectedDay] = useState(new Date());
+  // const [selectedDay, setSelectedDay] = useState(new Date());
 
   // console.log(`
   
@@ -24,6 +34,7 @@ const Reservation = () => {
   //   Year = ${selectedDay.getFullYear()}
   
   // `);
+  console.log(Reservation)
 
   useEffect(()=>{
 
@@ -45,13 +56,17 @@ const Reservation = () => {
     setshowModal(!showModal)
 
   }
+
+  const handleReservation = (e)=>{
+    setReservation({...Reservation,[e.target.name]:e.target.value})
+  }
   
 
   return (
     <div className={`${S.resMain}`}>
 
       {
-        showModal ? <ResModal toggleModal={toggleModal}/> : ""
+        showModal ? <ResModal toggleModal={toggleModal} Reservation={Reservation} handleReservation = {handleReservation} /> : ""
       }
 
       <div>
@@ -66,25 +81,25 @@ const Reservation = () => {
 
             <div className={`${S.input}`}>
               <a href="#" className="icon-user-plus"></a>
-              <select>
-                <option value="">No Of Person</option>
-                <option value="">1 Person</option>
-                <option value="">2 Persons</option>
-                <option value="">3 Persons</option>
-                <option value="">4 Persons</option>
-                <option value="">5 Persons</option>
-                <option value="">More Than 5</option>
+              <select name="noOfPerson" value={Reservation.noOfPerson} onChange={handleReservation}>
+                <option value="0">No Of Person</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 Persons</option>
+                <option value="3">3 Persons</option>
+                <option value="4">4 Persons</option>
+                <option value="5">5 Persons</option>
+                <option value="6">More Than 5</option>
               </select>
             </div>
 
             <div className={`${S.input}`}>
               <a href="#" className="icon-food_bank"></a>
-              <select>
-                <option value="">Select The Table</option>
-                <option value="">Vip</option>
-                <option value="">Deluxe-Vip</option>
-                <option value="">Premium-Vip</option>
-                <option value="">Dome-Vip</option>
+              <select name="table" value={Reservation.table} onChange={handleReservation}>
+                <option value="0">Select The Table</option>
+                <option value="vip">Vip</option>
+                <option value="deluxe-vip">Deluxe-Vip</option>
+                <option value="premium-vip">Premium-Vip</option>
+                <option value="dome-vip">Dome-Vip</option>
               </select>
             </div>
 
@@ -92,30 +107,30 @@ const Reservation = () => {
               <a href="#" className="icon-calendar"></a>
 
               <DatePicker
-                selected={selectedDay}
-                onChange={(date) => setSelectedDay(date)}
+                selected={Reservation.date}
+                onChange={(date) => setReservation({...Reservation,date})}
                 dateFormat="dd/MM/yyyy"
                 minDate={new Date()}
                 // here by filter we will not allow user tp pick sat and sun date
 
-                filterDate={(data) => {
-                  return data.getDay() != 6 && data.getDay() != 0;
-                }}
+                // filterDate={(data) => {
+                //   return data.getDay() != 6 && data.getDay() != 0;
+                // }}
                 calendarClassName={`${S.calClass}`}
               />
             </div>
 
             <div className={`${S.input}`}>
               <a href="#" className="icon-alarm"></a>
-              <select type="text">
-                <option value="">Pick A Time</option>
-                <option value="">9:00 Am</option>
-                <option value="">11:00 Am</option>
-                <option value="">1:00 Am</option>
-                <option value="">3:00 Pm</option>
-                <option value="">5:00 Pm</option>
-                <option value="">7:00 Pm</option>
-                <option value="">9:00 Pm </option>
+              <select name="time"value={Reservation.time} onChange={handleReservation}>
+                <option value="0">Pick A Time</option>
+                <option value="9:00 Am">9:00 Am</option>
+                <option value="11:00 Am">11:00 Am</option>
+                <option value="1:00 Am">1:00 Am</option>
+                <option value="3:00 Pm">3:00 Pm</option>
+                <option value="5:00 Pm">5:00 Pm</option>
+                <option value="7:00 Pm">7:00 Pm</option>
+                <option value="9:00 Pm">9:00 Pm</option>
               </select>
             </div>
 

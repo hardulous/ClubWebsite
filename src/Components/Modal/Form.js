@@ -2,7 +2,7 @@ import React from "react";
 import S from "./Styles/Form.module.css";
 import "../../icomon/style.css"
 
-const Form = ({ toggleModal }) => {
+const Form = ({ toggleModal,Reservation,handleReservation,checkoutHandler }) => {
 
   return (
 
@@ -20,20 +20,20 @@ const Form = ({ toggleModal }) => {
 
       <form>
         <div className={`${S.inputBox} icon-form-user`}>
-          <input type="text" placeholder="Your Name" />
+          <input type="text" value={Reservation.name} placeholder="Your Name" name="name" onChange={handleReservation}/>
         </div>
 
         <div className={`${S.inputBox} icon-form-envelop`}>
-          <input type="gmail" placeholder="Your Gmail" />
+          <input type="gmail" value={Reservation.gmail} placeholder="Your Gmail" name="gmail" onChange={handleReservation}/>
         </div>
 
         <div className={`${S.inputBox} icon-form-phone`}>
-          <input type="number" placeholder="Your Phone Number"
+          <input type="number" value={Reservation.number} placeholder="Your Phone Number" name="number" onChange={handleReservation}
           />
         </div>
 
         <div className={`${S.inputBox} icon-form-credit-card`}>
-          <select>
+          <select name="paymentMethod" value={Reservation.paymentMethod} onChange={handleReservation}>
             <option value="#">Payment Option</option>
             <option value="upi">UPI</option>
             <option value="debit-card">DEBIT CARD</option>
@@ -43,6 +43,7 @@ const Form = ({ toggleModal }) => {
 
         <button type="submit" className={`${S.inputBox} icon-form-banknote`} onClick={(e)=>{
           e.preventDefault();
+          checkoutHandler(100);
         }}>
           Proceed To Pay
         </button>
